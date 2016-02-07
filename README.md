@@ -219,4 +219,5 @@ http://commonmark.org/
 http://blog.codinghorror.com/standard-flavored-markdown/
 
 [syntax]: https://daringfireball.net/projects/markdown/syntax
+[daringfireball]: https://daringfireball.net/projects/markdown/syntax
 [comparable]: https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html
