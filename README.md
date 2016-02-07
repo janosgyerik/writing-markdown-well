@@ -32,7 +32,7 @@ TODO: the coding-horror image; + acknowledgement at the bottom
 Markdown as plain text
 ----------------------
 
-Markdown was designed to be nicely readable as plain text. (See [daringfireball][])
+Markdown was designed to be [nicely readable as plain text][philosophy].
 
 You may not normally read it in plain text form, but occasionally you might.
 
@@ -219,5 +219,5 @@ http://commonmark.org/
 http://blog.codinghorror.com/standard-flavored-markdown/
 
 [syntax]: https://daringfireball.net/projects/markdown/syntax
-[daringfireball]: https://daringfireball.net/projects/markdown/syntax
+[philosophy]: https://daringfireball.net/projects/markdown/syntax#philosophy
 [comparable]: https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html
