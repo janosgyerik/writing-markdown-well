@@ -29,8 +29,8 @@ TODO: the coding-horror image; + acknowledgement at the bottom
 
 - Other minor writing style issues
 
-Markdown as plain text
-----------------------
+Philosophy
+----------
 
 Markdown was designed to be [nicely readable as plain text][philosophy].
 
@@ -44,6 +44,69 @@ When you update the document later, most probably you have to work with the plai
 Which of these documents would you rather work with?
 
 TODO: 2 examples side by side, in plain-text form, first crap second pretty
+
+Headings
+--------
+
+Headings drive the structure of a document.
+Therefore it's crucial that they are loud and clear.
+
+### Top-level headings
+
+These are multiple equivalent ways of writing a top-level heading:
+
+    Document    Document    Document    # Document  #Document
+    =           ===         ========
+
+All these are normally rendered as `<h1>` headings.
+
+Which writing style should you prefer?
+
+Which writing style is the most readable?
+
+I prefer this one:
+
+    Document
+    ========
+
+### Sub-headings (right below top-level)
+
+These are multiple equivalent ways of writing a 2nd-level heading:
+
+    Section     Section     Section     ## Section  ##Section
+    -           ---         --------
+
+All these are normally rendered as `<h2>` headings.
+
+Which writing style should you prefer?
+
+Which writing style is the most readable?
+
+You guessed, I prefer this one:
+
+    Section
+    -------
+
+### Level 3 headings
+
+---
+
+Underline the document title using `=`,
+as many `=` as letters in the title.
+This corresponds to H1 headings in HTML.
+There should be only one such heading in a document.
+
+Prefixing the title with `#` has the same effect when rendered,
+but doesn't stand out enough in plain text.
+
+Underline section headings using `-`,
+using as many `-` as letters in the heading.
+This corresponds to H2 headings in HTML.
+
+Prefixing the title with `##` has the same effect when rendered,
+but doesn't stand out enough in plain text.
+
+
 
 ---
 
@@ -138,14 +201,6 @@ just go ahead with the final text.
 
 ### Readability
 
-5 equivalent ways of writing a document title:
-
-    Document    Document    Document    # Document  #Document
-    =           ===         ========
-
-Which is the most readable?
-
----
 
 Valid markdown examples, but which one is easier to read?
 
@@ -164,28 +219,6 @@ TODO
 ### Compatibility
 
 TODO
-
-Headings
---------
-
-Headings drive the structure of a document,
-it's important that they are loud and clear.
-
-Underline the document title using `=`,
-as many `=` as letters in the title.
-This corresponds to H1 headings in HTML.
-There should be only one such heading in a document.
-
-Prefixing the title with `#` has the same effect when rendered,
-but doesn't stand out enough in plain text.
-
-Underline section headings using `-`,
-using as many `-` as letters in the heading.
-This corresponds to H2 headings in HTML.
-
-Prefixing the title with `##` has the same effect when rendered,
-but doesn't stand out enough in plain text.
-
 
 Inline rules
 ------------
