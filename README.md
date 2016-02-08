@@ -110,7 +110,14 @@ I recommend this one:
 This is more readable than when the symbols and text are stuck together,
 just like code is more readable when you put spaces around operator symbols.
 
----
+### Below level 3 headings
+
+The original "spec" allows level 4-6 headers like this:
+
+    #### sub-sub-section, rendered as h4
+    ##### sub-sub-sub-oh-who-cares, rendered as h5
+    ###### whatever
+
 
 ---
 
