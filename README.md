@@ -53,7 +53,7 @@ Therefore it's crucial that they are loud and clear.
 
 ### Top-level headings
 
-These are multiple equivalent ways of writing a top-level heading:
+These are multiple equivalent ways to write a top-level heading:
 
     Document    Document    Document    # Document  #Document
     =           ===         ========
@@ -64,14 +64,14 @@ Which writing style should you prefer?
 
 Which writing style is the most readable?
 
-I prefer this one:
+I recommend this one:
 
     Document
     ========
 
 ### Sub-headings (right below top-level)
 
-These are multiple equivalent ways of writing a 2nd-level heading:
+These are multiple equivalent ways to write a 2nd-level heading:
 
     Section     Section     Section     ## Section  ##Section
     -           ---         --------
@@ -82,7 +82,7 @@ Which writing style should you prefer?
 
 Which writing style is the most readable?
 
-You guessed, I prefer this one:
+You guessed it: I recommend this one:
 
     Section
     -------
