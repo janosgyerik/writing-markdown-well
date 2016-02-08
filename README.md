@@ -69,9 +69,11 @@ I recommend this one:
     Document
     ========
 
+It stands out loud and clear, easily visible.
+
 ### Sub-headings (right below top-level)
 
-These are multiple equivalent ways to write a 2nd-level heading:
+These are multiple equivalent ways to write a level-2 heading:
 
     Section     Section     Section     ## Section  ##Section
     -           ---         --------
@@ -87,7 +89,26 @@ You guessed it: I recommend this one:
     Section
     -------
 
-### Level 3 headings
+It stands out loud and clear, easily visible.
+
+### Level-3 headings
+
+These are multiple equivalent ways to write a level-3 heading:
+
+    ### Sub-section     ###Sub-section     
+
+All these are normally rendered as `<h3>` headings.
+
+Which writing style should you prefer?
+
+Which writing style is the most readable?
+
+I recommend this one:
+
+    ### Sub-section
+
+This is more readable than when the symbols and text are stuck together,
+just like code is more readable when you put spaces around operator symbols.
 
 ---
 
