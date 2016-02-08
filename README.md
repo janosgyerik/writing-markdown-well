@@ -112,23 +112,6 @@ just like code is more readable when you put spaces around operator symbols.
 
 ---
 
-Underline the document title using `=`,
-as many `=` as letters in the title.
-This corresponds to H1 headings in HTML.
-There should be only one such heading in a document.
-
-Prefixing the title with `#` has the same effect when rendered,
-but doesn't stand out enough in plain text.
-
-Underline section headings using `-`,
-using as many `-` as letters in the heading.
-This corresponds to H2 headings in HTML.
-
-Prefixing the title with `##` has the same effect when rendered,
-but doesn't stand out enough in plain text.
-
-
-
 ---
 
 Most important messages.
