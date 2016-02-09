@@ -156,19 +156,6 @@ Order headings correctly and don't skip levels.
 
 ---
 
-Most important messages.
-Explain all.
-Add relevant examples of alternative ways,
-and explain why they are inferior.
-Add examples of common mistakes.
-
-- headings
-  - use `====`, `----` and `###` for headings
-  - use `====` style instead of `#`
-  - use `----` style instead of `#`
-  - don't use lower level than `###`
-  - pay attention to semantics
-
 - semantic correctness
   - when to use backticks
   - when to use `*`
