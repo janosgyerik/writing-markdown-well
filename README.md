@@ -134,6 +134,26 @@ The bottom line is, deeply nested documents are hard to read,
 and therefore not very useful. One way or another,
 eliminate the deep nesting by simplifying.
 
+### Semantic correctness
+
+It makes sense that the title of a document is special,
+and it should be marked distinctively from other parts.
+
+It makes sense that there should be only one such heading.
+Avoid multiple H1 headings within the same document.
+
+There can be multiple H2 headings within the top-level H1,
+and there can be multiple H3 headings within H2 headings.
+
+The document structure should have headings ordered by their levels,
+with no gaps in between. For example:
+
+- H1 followed by H2 followed by H3 is correct
+- H1 followed by H3, skipping H2 is incorrect
+- H3 followed by H2 is incorrect
+
+Order headings correctly and don't skip levels.
+
 ---
 
 Most important messages.
