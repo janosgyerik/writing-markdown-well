@@ -118,6 +118,21 @@ The original "spec" allows level 4-6 headers like this:
     ##### sub-sub-sub-oh-who-cares, rendered as h5
     ###### whatever
 
+But I don't recommend to use this.
+The biggest reason is that level 4-6 headers are often not supported.
+Many renderers use normal paragraph style for such headers.
+
+I suggest the following workarounds:
+
+- Move the section with deeply nested sub-sections to its own, separate document
+
+- Reorganize the document to eliminate deep nesting
+
+- If the sub-sections are small, replace them with bullet lists
+
+The bottom line is, deeply nested documents are hard to read,
+and therefore not very useful. One way or another,
+eliminate the deep nesting by simplifying.
 
 ---
 
