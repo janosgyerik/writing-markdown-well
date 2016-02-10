@@ -118,9 +118,10 @@ The original "spec" allows level 4-6 headers like this:
     ##### sub-sub-sub-oh-who-cares, rendered as h5
     ###### whatever
 
-But I don't recommend to use this.
-The biggest reason is that level 4-6 headers are often not supported.
+Don't do this. Level 4-6 headers are often not supported.
 Many renderers use normal paragraph style for such headers.
+
+![headings-on-stackoverflow](screenshots/headings-on-stackoverflow.png)
 
 I suggest the following workarounds:
 
