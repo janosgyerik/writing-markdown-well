@@ -15,7 +15,7 @@ TODO: 2 images from GitHub create new project screen 1 and 2
 
 It's also a great format for documentation.
 
-Common mistakes when writing in Markdown:
+Common mistakes when writing Markdown:
 
 TODO: the coding-horror image; + acknowledgement at the bottom
 
@@ -25,7 +25,7 @@ TODO: the coding-horror image; + acknowledgement at the bottom
 
 - Overly complicated nested structures
 
-- Using non-standard features, lock-in to specific renderers
+- Using not well-supported features, lock-in to specific renderers
 
 - Other minor writing style issues
 
@@ -34,10 +34,10 @@ Philosophy
 
 Markdown was designed to be [nicely readable as plain text][philosophy].
 
-You may not normally read it in plain text form, but occasionally you might.
+You may not normally read it in plain text form, but occasionally you might still want our need to.
 
 Other readers might read your documents in plain text.
-Understandably so, as the format was designed for that.
+Naturally, as the format was designed for that.
 
 When you update the document later, most probably you have to work with the plain text form.
 
@@ -71,7 +71,7 @@ I recommend this one:
 
 It stands out loud and clear, easily visible.
 
-### Sub-headings (right below top-level)
+### Section headings (right below top-level)
 
 These are multiple equivalent ways to write a level-2 heading:
 
@@ -107,10 +107,10 @@ I recommend this one:
 
     ### Sub-section
 
-This is more readable than when the symbols and text are stuck together,
-just like code is more readable when you put spaces around operator symbols.
+This is more readable than when the symbols and text are stuck together.
+The same way that code is more readable when you put spaces around operator symbols.
 
-### Below level 3 headings
+### Below level-3 headings
 
 The original "spec" allows level 4-6 headers like this:
 
@@ -118,7 +118,7 @@ The original "spec" allows level 4-6 headers like this:
     ##### sub-sub-sub-oh-who-cares, rendered as h5
     ###### whatever
 
-Don't do this. Level 4-6 headers are often not supported.
+Don't do this. Level 4-6 headers are often not well-supported.
 Many renderers use normal paragraph style for such headers.
 
 ![headings-on-stackoverflow](screenshots/headings-on-stackoverflow.png)
