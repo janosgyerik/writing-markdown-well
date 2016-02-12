@@ -58,7 +58,7 @@ These are multiple equivalent ways to write a top-level heading:
     Document    Document    Document    # Document  #Document
     =           ===         ========
 
-All these are normally rendered as `<h1>` headings.
+All these are normally rendered as H1 headings (`<h1>` in HTML).
 
 Which writing style should you prefer?
 
@@ -78,7 +78,7 @@ These are multiple equivalent ways to write a level-2 heading:
     Section     Section     Section     ## Section  ##Section
     -           ---         --------
 
-All these are normally rendered as `<h2>` headings.
+All these are normally rendered as H2 headings (`<h2>` in HTML).
 
 Which writing style should you prefer?
 
@@ -93,11 +93,11 @@ It stands out loud and clear, easily visible.
 
 ### Level-3 headings
 
-These are multiple equivalent ways to write a level-3 heading:
+These are equivalent ways to write a level-3 heading:
 
     ### Sub-section     ###Sub-section     
 
-All these are normally rendered as `<h3>` headings.
+All these are normally rendered as H3 headings (`<h3>` in HTML).
 
 Which writing style should you prefer?
 
@@ -114,9 +114,9 @@ The same way that code is more readable when you put spaces around operator symb
 
 The original "spec" allows level 4-6 headers like this:
 
-    #### sub-sub-section, rendered as h4
-    ##### sub-sub-sub-oh-who-cares, rendered as h5
-    ###### whatever
+    #### sub-sub-section, rendered as <h4>
+    ##### sub-sub-sub-oh-who-cares, rendered as <h5>
+    ###### whatever, rendered as <h6>
 
 Don't do this. Level 4-6 headers are often not well-supported.
 Many renderers use normal paragraph style for such headers.
@@ -125,15 +125,15 @@ Many renderers use normal paragraph style for such headers.
 
 I suggest the following workarounds:
 
-- Move the section with deeply nested sub-sections to its own, separate document
+- Move the section with deeply nested sub-sections to a separate document
 
 - Reorganize the document to eliminate deep nesting
 
-- If the sub-sections are small, replace them with bullet lists
+- If the sub-sections are small enough, consider replacing them with bullet lists
 
-The bottom line is, deeply nested documents are hard to read,
+The bottom line is: deeply nested documents are hard to read,
 and therefore not very useful. One way or another,
-eliminate the deep nesting by simplifying.
+eliminate deeply nested headings by simplifying the document.
 
 ### Semantic correctness
 
