@@ -266,6 +266,8 @@ http://commonmark.org/
 
 http://blog.codinghorror.com/standard-flavored-markdown/
 
+[spec]: http://commonmark.org/
+[standard-flavored-markdown]: http://blog.codinghorror.com/standard-flavored-markdown/
 [syntax]: https://daringfireball.net/projects/markdown/syntax
 [philosophy]: https://daringfireball.net/projects/markdown/syntax#philosophy
 [comparable]: https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html
