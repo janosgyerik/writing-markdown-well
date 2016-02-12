@@ -223,25 +223,6 @@ Philosophy
 Markdown is meant to make plain-text documents structured and look good.
 Easy to read, easy to write, simple, even without fancy rendering.
 
-Guiding principles:
-
-- Redability
-- Semanting correctness
-- Simplicity
-- Compatibility
-
-TODO: maybe instead of the following intro sub-sections,
-just go ahead with the final text.
-
-### Readability
-
-
-Valid markdown examples, but which one is easier to read?
-
-    -Requirements
-    -Building
-    -Running
-
 ### Semantic correctness
 
 TODO
