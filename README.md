@@ -197,6 +197,23 @@ Use inline code style for:
 - Executable names
 - Filenames
 
+Code blocks
+-----------
+
+The spec allows indenting with a single tab or 4 spaces.
+Indent with 4 spaces.
+
+These are equivalent ways to format code blocks:
+
+    View status with:
+
+        git status -sb
+
+    View status with:
+    ```
+    git status -sb
+    ```
+
 Other things to avoid
 ---------------------
 
