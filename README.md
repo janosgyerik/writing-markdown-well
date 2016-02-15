@@ -255,12 +255,6 @@ Other things to avoid
   - `---` seems perfectly reasonable for horizontal rules
   - `-` easiest to write as bullet
 
-Philosophy
-----------
-
-Markdown is meant to make plain-text documents structured and look good.
-Easy to read, easy to write, simple, even without fancy rendering.
-
 Links
 -----
 
