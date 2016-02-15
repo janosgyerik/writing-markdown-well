@@ -155,12 +155,50 @@ with no gaps in between. For example:
 
 Order headings correctly and don't skip levels.
 
----
+Inline styles
+-------------
 
-- semantic correctness
-  - when to use backticks
-  - when to use `*`
-  - when to use `**`
+Use inline styles for:
+
+- *emphasis*: surround with single asterisks
+- **strong emphasis**: surround with double asterisks
+- `inline code`: surround with backticks
+
+### Emphasis
+
+What to use emphasis?
+
+- Anything you want to emphasize
+- Keywords, when defined for the first time within the text
+- Key phrases, for example *single responsibility principle*
+
+Don't use emphasis for code, commands (see inline code section below).
+
+### Strong emphasis
+
+When to use strong emphasis?
+
+I use them to highlight GUI elements, such as:
+
+- Window names
+- Menu item names
+- Button labels
+
+Don't use strong emphasis for code, commands (see inline code section below).
+
+### Inline code
+
+Use inline code style for:
+
+- Class names
+- Function names
+- Variable names
+- Very short inline example code
+- Executable names
+- Filenames
+
+Other things to avoid
+---------------------
 
 - simplicity
   - don't use deeply nested, tricky structures
@@ -234,30 +272,6 @@ TODO
 ### Compatibility
 
 TODO
-
-Inline rules
-------------
-
-Inline formats and when to use them:
-
-- `inline code`: use backticks for code-like things, such as:
-  + class names
-  + function names
-  + variable names
-  + very short inline example code
-  + program names
-  + filenames
-
-- *emphasis*: use single asterisks for emphasis, such as:
-  + keywords of your system, when defined for the first time
-  + key terms, for example *single responsibility principle*
-
-- **strong emphasis**: use double asterisks for strong emphasis
-  + window names
-  + menu item names
-
-Combine elements as necessary,
-for example to link to the JavaDoc of [`Comparable`][comparable]
 
 Links
 -----
