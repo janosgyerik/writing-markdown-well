@@ -34,12 +34,12 @@ Philosophy
 
 Markdown was designed to be [nicely readable as plain text][philosophy].
 
-You may not normally read it in plain text form, but occasionally you might still want our need to.
+You may not normally read it in plain text form, but sometimes you might still need to.
 
 Other readers might read your documents in plain text.
-Naturally, as the format was designed for that.
+Naturally: the format was designed for that!
 
-When you update the document later, most probably you have to work with the plain text form.
+When you update the document later, you typically have to work with the plain text form.
 
 Which of these documents would you rather work with?
 
