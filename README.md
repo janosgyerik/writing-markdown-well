@@ -261,18 +261,6 @@ Philosophy
 Markdown is meant to make plain-text documents structured and look good.
 Easy to read, easy to write, simple, even without fancy rendering.
 
-### Semantic correctness
-
-TODO
-
-### Simplicity
-
-TODO
-
-### Compatibility
-
-TODO
-
 Links
 -----
 
