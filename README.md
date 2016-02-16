@@ -228,14 +228,20 @@ It's OK to use fenced code blocks when syntax highlighting is important and supp
 
 Do add a blank line before and after fenced code blocks.
 
-Other things to avoid
----------------------
+Things to avoid
+---------------
 
-- simplicity
-  - don't use deeply nested, tricky structures
-  - don't use html
-  - don't use `&amp;` etc
-  - don't use line breaks (two space at end of line)
+- Don't use deeply nested, tricky structures
+- Don't use html
+- Don't use `&amp;` etc
+- Don't use line breaks (two space at end of line)
+
+Good habits
+-----------
+
+TODO
+
+---
 
 - readability
   - horizontal spacing
