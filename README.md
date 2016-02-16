@@ -201,13 +201,15 @@ Code blocks
 -----------
 
 The spec allows indenting with a single tab or 4 spaces.
-Indent with 4 spaces.
+Indent with 4 spaces. For the usual reason: it will look the same everywhere.
 
-These are equivalent ways to format code blocks:
+Here's one way to format code blocks:
 
     View status with:
 
         git status -sb
+
+Here's an equivalent way to format code blocks:
 
     View status with:
     ```
