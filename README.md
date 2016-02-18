@@ -137,16 +137,14 @@ eliminate deeply nested headings by simplifying the document.
 
 ### Semantic correctness
 
-It makes sense that the title of a document is special,
-and it should be marked distinctively from other parts.
-
-It makes sense that there should be only one such heading.
+A document should have only one title.
+The obvious formatting style for that is H1.
 Avoid multiple H1 headings within the same document.
 
-There can be multiple H2 headings within the top-level H1,
-and there can be multiple H3 headings within H2 headings.
+A document typically has multiple sections.
+The obvious formattings style for section headers is H2.
 
-The document structure should have headings ordered by their levels,
+A document should have headings ordered by their levels,
 with no gaps in between. For example:
 
 - H1 followed by H2 followed by H3 is correct
