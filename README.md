@@ -216,12 +216,12 @@ Here's an equivalent way to format code blocks:
 
 What's wrong with fenced code blocks?
 
-- Not as well supported as indented code blocks
-- In plain text they look strange, cryptic
+- Not supported so well as indented code blocks
+- Doesn't look as clean and obvious in plain text
 
-What's good with fenced code blocks?
+What's good about fenced code blocks?
 
-It's possible to specify the language used, and get syntax highlighting.
+They can allow language-specific syntax highlighting.
 It's OK to use fenced code blocks when syntax highlighting is important and supported by the intended renderer.
 
 Do add a blank line before and after fenced code blocks.
