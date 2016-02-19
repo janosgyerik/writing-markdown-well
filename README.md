@@ -248,8 +248,6 @@ TODO
     + empty line between heading and body
     + empty line between paragraph and list
     + empty line around horizontal rule
-  - prefer `====` and `----` for headings
-  - prefer indented code blocks over fenced code blocks
   - number properly in numbered lists
   - break lines between list items if too long
   - align list items
@@ -257,10 +255,6 @@ TODO
   - use horizontal rules in consistent format
   - prefer `*` over `_`
   - don't use `_` for horizontal rule
-
-- compatibility
-  - prefer indented code blocks over fenced code blocks
-  - don't use below `###`
 
 - links
   - prefer `[title][name]` + reference over inline `[title](link)`
@@ -270,6 +264,7 @@ TODO
   - don't bother escaping HTML entities such as `&amp;` etc
   - don't use line breaks (two space at end of line)
   - don't use below `###`
+  - don't bother closing `###` headers
   - don't use fenced code blocks
   - number properly in numbered lists
   - don't be lazy
@@ -280,13 +275,7 @@ TODO
   - paragraph between heading and sub-heading or list
   - `*` for keywords, key terms, on first occurrence only
 
-- semantics
-  - use headings right
-  - forget italic and bold, think emphasis and important
-  - use `*` and `**` and backticks right
-
-- lazyness
-  - don't bother closing `###` headers
+- laziness
   - `---` seems perfectly reasonable for horizontal rules
   - `-` easiest to write as bullet
 
