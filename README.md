@@ -6,8 +6,10 @@ Writing markdown well
 ---
 
 Markdown is important because it's used everywhere.
+^^^ Not true.
 
-TODO: 3 images of sites that use it, side by side, with some sample markdown + rendered, easily identifiable
+TODO: 3 images of sites that use it, side by side, with some sample markdown + rendered, easily identifiable:
+github, stack overflow, reddit?
 
 Every decent project should have at least a `README.md` file.
 
@@ -20,6 +22,7 @@ Common mistakes when writing Markdown:
 TODO: the coding-horror image; + acknowledgement at the bottom
 
 - Looks good when rendered as HTML, but looks crap as plain text
+  + Markdown isn't designed for creating HTML!
 
 - Semantic violations of headings and inline formatting styles
 
@@ -195,6 +198,17 @@ Use inline code style for:
 - Executable names
 - Filenames
 
+### Mixing inline styles on the same line
+
+Is this easy to read?
+
+    The quick *brown fox* **jumps** *over* the lazy **dog**
+
+Not really.
+
+- Avoid nesting inline styles
+- Avoid using too many inline styles on the same line
+
 Code blocks
 -----------
 
@@ -285,6 +299,8 @@ Links
 http://commonmark.org/
 
 http://blog.codinghorror.com/standard-flavored-markdown/
+
+http://www.adamhyde.net/whats-wrong-with-markdown/
 
 [spec]: http://commonmark.org/
 [standard-flavored-markdown]: http://blog.codinghorror.com/standard-flavored-markdown/
