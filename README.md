@@ -99,7 +99,7 @@ It stands out loud and clear, easily visible.
 These are multiple equivalent ways to write a level-2 heading:
 
     Section     Section     Section     ## Section  ##Section
-    -           ---         --------
+    -           ---         -------
 
 All these are normally rendered as H2 headings (`<h2>` in HTML).
 
