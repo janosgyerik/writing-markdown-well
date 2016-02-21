@@ -302,6 +302,15 @@ Good habits
 
 TODO
 
+Not concluded
+-------------
+
+Here's a summary of features I don't have a strong opinion (and recommendation) about, yet:
+
+- Horizontal rules
+  - https://daringfireball.net/projects/markdown/syntax#hr
+  - I use `---` because it's easy to type and easy enough to see
+
 (scratch notes)
 ---------------
 
@@ -324,8 +333,6 @@ TODO
   - paragraph between heading and sub-heading or list
   - `*` for keywords, key terms, on first occurrence only
 
-- laziness
-  - `---` seems perfectly reasonable for horizontal rules
 
 See also
 --------
