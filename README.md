@@ -281,7 +281,9 @@ TODO
 ### Other style tips
 
 - Don't put code blocks inside lists: it's complicated and poorly supported
+- Avoid deeply nested lists
 - Add or omit empty lines between list items to improve readability
+  - Do it consistently: either put an empty line between all items or none
 
 Links
 -----
@@ -311,13 +313,11 @@ Publishers recommend to have an introductory paragraph in between:
 - lists
 - code blocks
 
-Other things to avoid
----------------------
+Things to avoid
+---------------
 
 Don't do this:
 
-- Don't use deeply nested, tricky structures
-    + move this to lists section
 - Don't embed HTML. Try to use strictly plain text format
 - Don't use line breaks (two spaces at end of line)
 - Don't bother closing `###` headers
