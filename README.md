@@ -336,6 +336,7 @@ Here's a summary of features I don't have a strong opinion (and recommendation) 
 - Horizontal rules
   - https://daringfireball.net/projects/markdown/syntax#hr
   - I use `---` because it's easy to type and easy enough to see
+  - Definitely don't use underscores (not aligned in the middle of the line)
 
 (scratch notes)
 ---------------
@@ -353,7 +354,6 @@ Here's a summary of features I don't have a strong opinion (and recommendation) 
   - use different symbol at different levels // matter of taste
   - use horizontal rules in consistent format
   - prefer `*` over `_`
-  - don't use `_` for horizontal rule
 
 - publisher rules
   - paragraph between heading and sub-heading or list
