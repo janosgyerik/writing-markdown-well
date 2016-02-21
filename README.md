@@ -197,7 +197,7 @@ I use them to highlight GUI elements, such as:
 - Menu item names
 - Button labels
 
-Don't use strong emphasis for code, commands (see inline code section below).
+Don't use strong emphasis for code, commands (see the section on inline code below).
 
 ### Inline code
 
