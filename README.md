@@ -253,20 +253,57 @@ It's OK to use fenced code blocks when syntax highlighting is important and supp
 
 Do add a blank line before and after fenced code blocks.
 
-Things to avoid
----------------
+Lists
+-----
+
+TODO
+
+### Unordered lists
+
+TODO
+
+- `*` and `-` are both intuitive
+- `-` easiest to write as bullet
+
+### Numbered lists
+
+TODO
+
+- Don't be lazy: number the bullets properly in numbered lists
+
+### Common tips
+
+- Don't put code blocks inside lists: it's complicated and poorly supported
+- Add empty lines in between for more "packed" lists
+- Lists of short keywords are easiest to read
+
+Links
+-----
+
+TODO
+
+- links
+  - prefer `[title][name]` + reference over inline `[title](link)`
+
+Other things to avoid
+---------------------
+
+Don't do this:
 
 - Don't use deeply nested, tricky structures
-- Don't use html
-- Don't use `&amp;` etc
-- Don't use line breaks (two space at end of line)
+    + move this to lists section
+- Don't embed HTML. Try to use strictly plain text format
+- Don't use line breaks (two spaces at end of line)
+- Don't bother closing `###` headers
+    + move this to headings section
 
 Good habits
 -----------
 
 TODO
 
----
+(scratch notes)
+---------------
 
 - readability
   - horizontal spacing
@@ -283,31 +320,15 @@ TODO
   - prefer `*` over `_`
   - don't use `_` for horizontal rule
 
-- links
-  - prefer `[title][name]` + reference over inline `[title](link)`
-
-- summary of recommendations against daring fireball
-  - don't use HTML
-  - don't bother escaping HTML entities such as `&amp;` etc
-  - don't use line breaks (two space at end of line)
-  - don't use below `###`
-  - don't bother closing `###` headers
-  - don't use fenced code blocks
-  - number properly in numbered lists
-  - don't be lazy
-  - don't put code blocks inside lists
-  - indent with 4 spaces instead of tabs
-
 - publisher rules
   - paragraph between heading and sub-heading or list
   - `*` for keywords, key terms, on first occurrence only
 
 - laziness
   - `---` seems perfectly reasonable for horizontal rules
-  - `-` easiest to write as bullet
 
-Links
------
+See also
+--------
 
 http://commonmark.org/
 
