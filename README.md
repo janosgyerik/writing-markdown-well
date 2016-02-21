@@ -179,7 +179,7 @@ Use inline styles for:
 
 ### Emphasis
 
-When to use emphasis?
+When to use *emphasis*?
 
 - Anything you want to emphasize
 - Keywords, when defined for the first time within the text
@@ -189,7 +189,7 @@ Don't use emphasis for code, commands (see inline code section below).
 
 ### Strong emphasis
 
-When to use strong emphasis?
+When to use **strong emphasis**?
 
 I use them to highlight GUI elements, such as:
 
@@ -201,7 +201,7 @@ Don't use strong emphasis for code, commands (see inline code section below).
 
 ### Inline code
 
-Use inline code style for:
+When to use `inline code`?
 
 - Class names
 - Function names
