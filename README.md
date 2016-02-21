@@ -168,6 +168,12 @@ with no gaps in between. For example:
 
 Order headings correctly and don't skip levels.
 
+### Other style tips
+
+Put a blank line before and after headings.
+
+Don't nest headings without a paragraph in between.
+
 Inline styles
 -------------
 
@@ -272,11 +278,10 @@ TODO
 
 - Don't be lazy: number the bullets properly in numbered lists
 
-### Common tips
+### Other style tips
 
 - Don't put code blocks inside lists: it's complicated and poorly supported
-- Add empty lines in between for more "packed" lists
-- Lists of short keywords are easiest to read
+- Add or omit empty lines between list items to improve readability
 
 Links
 -----
@@ -285,6 +290,26 @@ TODO
 
 - links
   - prefer `[title][name]` + reference over inline `[title](link)`
+
+Vertical spacing
+----------------
+
+Use blank lines generously. Add a blank line before and after:
+
+- headings
+- lists
+- code blocks
+
+Don't use blank lines excessively. One blank line in between sections should be enough.
+
+Introductory paragraphs
+-----------------------
+
+Publishers recommend to have an introductory paragraph in between:
+
+- headings
+- lists
+- code blocks
 
 Other things to avoid
 ---------------------
