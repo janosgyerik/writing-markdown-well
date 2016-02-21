@@ -1,33 +1,42 @@
-Writing markdown well
+Writing Markdown well
 =====================
 
 *Note: work in progress...*
 
 An opinionated guide to writing readable, semantically correct, portable Markdown.
 
----
+Why Markdown?
+-------------
 
-Markdown is a lightweight markup language with plain text formatting syntax. It's often used to format README files. GitHub, for example, explicitly recommends adding a `README.md` file when you create a new project.
+Markdown is a lightweight markup language with plain text formatting syntax. It's often used to format README files.
+
+GitHub, for example, explicitly recommends adding a `README.md` file when you create a new project:
 
 ![github-new-repo0](screenshots/github-new-repo0.png)
+
+GitHub doesn't ask what format you prefer,
+it just assumes you want to use Markdown:
+
 ![github-new-repo1](screenshots/github-new-repo1.png)
 
-It's also a great format for documentation.
+It's also handy for other technical documentation in a project.
+
+What's wrong with Markdown?
+---------------------------
+
+Markdown is not designed as a lazy way to create HTML.
 
 Common mistakes when writing Markdown:
 
-TODO: the coding-horror image; + acknowledgement at the bottom
-
 - Looks good when rendered as HTML, but looks crap as plain text
-  + Markdown isn't designed for creating HTML!
 
 - Semantic violations of headings and inline formatting styles
 
-- Overly complicated nested structures
+- Using complicated nested structures
 
 - Using not well-supported features, lock-in to specific renderers
 
-- Other minor writing style issues
+- Other general writing style issues
 
 Philosophy
 ----------
@@ -37,7 +46,7 @@ Markdown was designed to be [nicely readable as plain text][philosophy].
 You may not normally read it in plain text form, but sometimes you might still need to.
 
 Other readers might read your documents in plain text.
-Naturally: the format was designed for that!
+Of course! The format was designed for that!
 
 When you update the document later, you typically have to work with the plain text form.
 
