@@ -174,7 +174,9 @@ Inline styles
 Use inline styles for:
 
 - `*emphasis*`: enclose with single asterisks
+  - Don't use `_emphasis_`, it's less readable
 - `**strong emphasis**`: enclose with double asterisks
+  - Don't use `__strong emphasis__`, it's less readable
 - `` `inline code` ``: enclose with backticks
 
 ### Emphasis
