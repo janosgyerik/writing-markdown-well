@@ -81,7 +81,7 @@ These are multiple equivalent ways to write a top-level heading:
     Document    Document    Document    # Document  #Document
     =           ===         ========
 
-All these are normally rendered as H1 headings (`<h1>` in HTML).
+All of these are normally rendered as H1 headings (`<h1>` in HTML).
 
 Which writing style should you prefer?
 
@@ -101,7 +101,7 @@ These are multiple equivalent ways to write a level-2 heading:
     Section     Section     Section     ## Section  ##Section
     -           ---         -------
 
-All these are normally rendered as H2 headings (`<h2>` in HTML).
+All of these are normally rendered as H2 headings (`<h2>` in HTML).
 
 Which writing style should you prefer?
 
@@ -120,7 +120,7 @@ These are equivalent ways to write a level-3 heading:
 
     ### Sub-section     ###Sub-section     
 
-All these are normally rendered as H3 headings (`<h3>` in HTML).
+All of these are normally rendered as H3 headings (`<h3>` in HTML).
 
 Which writing style should you prefer?
 
