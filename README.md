@@ -1,7 +1,9 @@
 Writing markdown well
 =====================
 
-*Note: work in progress, heavily...*
+*Note: work in progress...*
+
+An opinionated guide to writing readable, semantically correct, portable Markdown.
 
 ---
 
