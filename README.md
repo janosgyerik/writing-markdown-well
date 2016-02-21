@@ -7,15 +7,10 @@ An opinionated guide to writing readable, semantically correct, portable Markdow
 
 ---
 
-Markdown is important because it's used everywhere.
-^^^ Not true.
+Markdown is a lightweight markup language with plain text formatting syntax. It's often used to format README files. GitHub, for example, explicitly recommends adding a `README.md` file when you create a new project.
 
-TODO: 3 images of sites that use it, side by side, with some sample markdown + rendered, easily identifiable:
-github, stack overflow, reddit?
-
-Every decent project should have at least a `README.md` file.
-
-TODO: 2 images from GitHub create new project screen 1 and 2
+![github-new-repo0](screenshots/github-new-repo0.png)
+![github-new-repo1](screenshots/github-new-repo1.png)
 
 It's also a great format for documentation.
 
