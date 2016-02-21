@@ -50,6 +50,8 @@ This is a collection of tips and recommendations when using Markdown, based on m
 
 If some feature is not mentioned in this guide, it's most probably because I don't recommend it.
 
+I'd like to hear your opinion and possibly improve this guide.
+
 Why care about the plain text form?
 -----------------------------------
 
