@@ -173,9 +173,9 @@ Inline styles
 
 Use inline styles for:
 
-- *emphasis*: surround with single asterisks
-- **strong emphasis**: surround with double asterisks
-- `inline code`: surround with backticks
+- `*emphasis*`: surround with single asterisks
+- `**strong emphasis**`: surround with double asterisks
+- `` `inline code` ``: surround with backticks
 
 ### Emphasis
 
