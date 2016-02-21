@@ -83,8 +83,6 @@ These are multiple equivalent ways to write a top-level heading:
 
 All of these are normally rendered as H1 headings (`<h1>` in HTML).
 
-Which writing style should you prefer?
-
 Which writing style is the most readable?
 
 I recommend this one:
@@ -103,8 +101,6 @@ These are multiple equivalent ways to write a level-2 heading:
 
 All of these are normally rendered as H2 headings (`<h2>` in HTML).
 
-Which writing style should you prefer?
-
 Which writing style is the most readable?
 
 You guessed it: I recommend this one:
@@ -121,8 +117,6 @@ These are equivalent ways to write a level-3 heading:
     ### Sub-section     ###Sub-section     
 
 All of these are normally rendered as H3 headings (`<h3>` in HTML).
-
-Which writing style should you prefer?
 
 Which writing style is the most readable?
 
