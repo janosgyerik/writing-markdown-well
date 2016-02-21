@@ -26,6 +26,9 @@ What's wrong with Markdown?
 
 Ambiguity. Many features have many ways of writing them. Some ways are better than others, but the best way is often not obvious. Different users adopt different writing styles, which hurts readability.
 
+What goes wrong with Markdown?
+------------------------------
+
 Markdown is not designed as a lazy way to create HTML, but many people use it that way.
 
 In particular, these are some common mistakes when writing Markdown:
