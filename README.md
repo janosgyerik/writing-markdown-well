@@ -225,8 +225,8 @@ Not really.
 Code blocks
 -----------
 
-The spec allows indenting with a single tab or 4 spaces.
-Indent with 4 spaces. For the usual reason: it will look the same everywhere.
+The spec allows indenting with 4 spaces or a single tab.
+I suggest to use 4 spaces. For the usual reason: 4 spaces will look the same everywhere, while the display width of tabs may depend on the viewer.
 
 Here's one way to format code blocks:
 
