@@ -156,8 +156,8 @@ A document should have only one title.
 The obvious formatting style for that is H1.
 Avoid multiple H1 headings within the same document.
 
-A document typically has multiple sections.
-The obvious formattings style for section headers is H2.
+A document often has multiple sections.
+The obvious formatting style for section headers is H2.
 
 A document should have headings ordered by their levels,
 with no gaps in between. For example:
