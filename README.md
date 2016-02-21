@@ -179,7 +179,7 @@ Use inline styles for:
 
 ### Emphasis
 
-What to use emphasis?
+When to use emphasis?
 
 - Anything you want to emphasize
 - Keywords, when defined for the first time within the text
