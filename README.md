@@ -222,7 +222,6 @@ Not really.
 
 - Avoid nesting inline styles
 - Avoid using too many inline styles on the same line
-- Avoid using inline styles willy-nilly
 
 Code blocks
 -----------
