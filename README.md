@@ -148,9 +148,7 @@ I suggest the following workarounds:
 
 - If the sub-sections are small enough, consider replacing them with bullet lists
 
-The bottom line is: deeply nested documents are hard to read,
-and therefore not very useful. One way or another,
-eliminate deeply nested headings by simplifying the document.
+The bottom line is: deeply nested documents are hard to read, and therefore not very useful. Simplify the document to eliminate deeply nested headings.
 
 ### Semantic correctness
 
