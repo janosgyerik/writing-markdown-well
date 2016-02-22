@@ -395,19 +395,11 @@ Here's a summary of features I don't have a strong opinion (and recommendation) 
   - https://daringfireball.net/projects/markdown/syntax#hr
   - I use `---` because it's easy to type and easy enough to see
   - Definitely don't use underscores (not aligned in the middle of the line)
+  - Definitely use consistent format
 
-(scratch notes)
----------------
+- Use different symbols at different nesting levels of lists?
 
-- readability
-  - horizontal spacing
-    + space before starting `*` and after closing `*`
-  - number properly in numbered lists
-  - break lines between list items if too long
-  - align list items
-  - use different symbol at different levels // matter of taste
-  - use horizontal rules in consistent format
-  - prefer `*` over `_`
+- How to indent multi-line numbered lists and bullet lists?
 
 See also
 --------
