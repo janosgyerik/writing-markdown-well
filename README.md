@@ -47,11 +47,10 @@ In particular, these are some common mistakes when writing Markdown:
 Why this guide?
 ---------------
 
-This is a collection of tips and recommendations when using Markdown, based on my experience of writing and reading a lot in this format. This is highly opinionated stuff, and you might not agree with everything. My goal is to prevent the most common issues mentioned above.
-
-If some feature is not mentioned in this guide, it's most probably because I don't recommend it.
-
-I'd like to hear your opinion and possibly improve this guide.
+This is a collection of tips and recommendations when using Markdown,
+based on my experience of writing and reading a lot in this format.
+This is highly opinionated stuff, and you might not agree with everything.
+My goal is to prevent the most common issues mentioned above.
 
 Why care about the plain text form?
 -----------------------------------
