@@ -61,10 +61,6 @@ Of course! The format was designed for that!
 
 When you update the document later, you typically have to work with the plain text form.
 
-Which of these documents would you rather work with?
-
-TODO: 2 examples side by side, in plain-text form, first crap second pretty
-
 Headings
 --------
 
