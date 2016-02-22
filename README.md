@@ -1,8 +1,6 @@
 Writing Markdown well
 =====================
 
-*Note: work in progress...*
-
 An opinionated guide to writing readable, semantically correct, portable Markdown.
 
 Why Markdown?
