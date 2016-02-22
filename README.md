@@ -79,14 +79,10 @@ These are multiple equivalent ways to write a top-level heading:
 
 All of these are normally rendered as H1 headings (`<h1>` in HTML).
 
-Which writing style is the most readable?
-
-I recommend this one:
+This writing stye is loud and clear, easily visible:
 
     Document
     ========
-
-It stands out loud and clear, easily visible.
 
 ### Section headings (right below top-level)
 
@@ -97,14 +93,10 @@ These are multiple equivalent ways to write a level-2 heading:
 
 All of these are normally rendered as H2 headings (`<h2>` in HTML).
 
-Which writing style is the most readable?
-
-You guessed it: I recommend this one:
+This writing stye is loud and clear, easily visible:
 
     Section
     -------
-
-It stands out loud and clear, easily visible.
 
 ### Level-3 headings
 
@@ -114,14 +106,9 @@ These are equivalent ways to write a level-3 heading:
 
 All of these are normally rendered as H3 headings (`<h3>` in HTML).
 
-Which writing style is the most readable?
-
-I recommend this one:
+The heading text is easier to read when separated from the markup:
 
     ### Sub-section
-
-This is more readable than when the symbols and text are stuck together.
-The same way that code is more readable when you put spaces around operator symbols.
 
 ### Below level-3 headings
 
