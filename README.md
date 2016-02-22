@@ -248,25 +248,24 @@ Do add a blank line before and after fenced code blocks.
 Lists
 -----
 
-TODO
+Unordered lists:
 
-### Unordered lists
+- Prefix items with `-`, `*` or `+`
+- Whichever symbol is fine, just use consistently, don't mix them
+- I prefer `-` because it's easiest to write on a querty keyboard
+- Tip: sometimes nested lists are easier to read if using a different symbol
 
-TODO
+Numbered lists:
 
-- `*` and `-` are both intuitive
-- `-` easiest to write as bullet
+- Prefix items with numbers and a dot, like `1.`, `2.`, ...
+- The spec allows skipping numbers, or even `1.`, `1.`, `1.` but don't do that, as it will only look good in HTML, not in plain text
 
-### Numbered lists
+Other style tips:
 
-TODO
+- Avoid complicated/sophisticated structure, for example:
+  - Don't try to put code blocks inside lists: it's complicated and poorly supported
+  - Avoid deep nesting
 
-- Don't be lazy: number the bullets properly in numbered lists
-
-### Other style tips
-
-- Don't put code blocks inside lists: it's complicated and poorly supported
-- Avoid deeply nested lists
 - Add or omit empty lines between list items to improve readability
   - Do it consistently: either put an empty line between all items or none
 
