@@ -312,11 +312,6 @@ Don't do this:
 - Don't embed HTML. Try to use strictly plain text format
 - Don't use line breaks (two spaces at end of line)
 
-Good habits
------------
-
-TODO
-
 Not concluded
 -------------
 
