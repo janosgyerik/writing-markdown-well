@@ -272,7 +272,96 @@ Other style tips:
 Links
 -----
 
+Instead of embedded links like this:
+
+    The [syntax](https://daringfireball.net/projects/markdown/syntax) is too permissive.
+
+Prefer reference links like this:
+
+    The [syntax][syntax] is too permissive.
+
+    ...
+
+    [syntax]: https://daringfireball.net/projects/markdown/syntax
+
+Vertical spacing
+----------------
+
+Use blank lines generously. Add a blank line before and after:
+
+- headings
+- lists
+- code blocks
+
+Don't use blank lines excessively. One blank line in between sections should be enough.
+
+Introductory paragraphs
+-----------------------
+
+Publishers recommend to have an introductory paragraph in between:
+
+- headings
+- lists
+- code blocks
+
+Things to avoid
+---------------
+
+Don't do this:
+
+- Don't embed HTML. Try to use strictly plain text format
+- Don't use line breaks (two spaces at end of line)
+
+Good habits
+-----------
+
 TODO
+
+Not concluded
+-------------
+
+Here's a summary of features I don't have a strong opinion (and recommendation) about, yet:
+
+- Horizontal rules
+  - https://daringfireball.net/projects/markdown/syntax#hr
+  - I use `---` because it's easy to type and easy enough to see
+  - Definitely don't use underscores (not aligned in the middle of the line)
+
+(scratch notes)
+---------------
+
+- readability
+  - horizontal spacing
+    + space before starting `*` and after closing `*`
+  - vertical spacing
+    + empty line between heading and body
+    + empty line between paragraph and list
+    + empty line around horizontal rule
+  - number properly in numbered lists
+  - break lines between list items if too long
+  - align list items
+  - use different symbol at different levels // matter of taste
+  - use horizontal rules in consistent format
+  - prefer `*` over `_`
+
+See also
+--------
+
+http://commonmark.org/
+
+http://blog.codinghorror.com/standard-flavored-markdown/
+
+http://www.adamhyde.net/whats-wrong-with-markdown/
+
+[spec]: http://commonmark.org/
+[standard-flavored-markdown]: http://blog.codinghorror.com/standard-flavored-markdown/
+[syntax]: https://daringfireball.net/projects/markdown/syntax
+[philosophy]: https://daringfireball.net/projects/markdown/syntax#philosophy
+[comparable]: https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html
+[syntax]: https://daringfireball.net/projects/markdown/syntax
+[syntax]: https://daringfireball.net/projects/markdown/syntax
+
+Prefer reference links
 
 - links
   - prefer `[title][name]` + reference over inline `[title](link)`
