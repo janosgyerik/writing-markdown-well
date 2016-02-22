@@ -326,14 +326,6 @@ Here's a summary of features I don't have a strong opinion (and recommendation) 
 ---------------
 
 - readability
-  - horizontal spacing
-    + space before starting `*` and after closing `*`
-  - vertical spacing
-    + empty line between heading and body
-    + empty line between paragraph and list
-    + empty line around horizontal rule
-  - number properly in numbered lists
-  - break lines between list items if too long
   - align list items
   - use different symbol at different levels // matter of taste
   - use horizontal rules in consistent format
@@ -410,10 +402,6 @@ Here's a summary of features I don't have a strong opinion (and recommendation) 
 - readability
   - horizontal spacing
     + space before starting `*` and after closing `*`
-  - vertical spacing
-    + empty line between heading and body
-    + empty line between paragraph and list
-    + empty line around horizontal rule
   - number properly in numbered lists
   - break lines between list items if too long
   - align list items
@@ -424,11 +412,11 @@ Here's a summary of features I don't have a strong opinion (and recommendation) 
 See also
 --------
 
-http://commonmark.org/
+Related links:
 
-http://blog.codinghorror.com/standard-flavored-markdown/
-
-http://www.adamhyde.net/whats-wrong-with-markdown/
+- http://commonmark.org/
+- http://blog.codinghorror.com/standard-flavored-markdown/
+- http://www.adamhyde.net/whats-wrong-with-markdown/
 
 [spec]: http://commonmark.org/
 [standard-flavored-markdown]: http://blog.codinghorror.com/standard-flavored-markdown/
