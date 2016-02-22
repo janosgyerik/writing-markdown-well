@@ -102,11 +102,13 @@ This writing stye is loud and clear, easily visible:
 
 These are equivalent ways to write a level-3 heading:
 
-    ### Sub-section     ###Sub-section     
+    ### Sub-section     ###Sub-section     ### Sub-section ###
 
 All of these are normally rendered as H3 headings (`<h3>` in HTML).
 
-The heading text is easier to read when separated from the markup:
+The heading text stands out a bit more when separated from the markers.
+The closing `###` is also unnecessary, and noisy.
+So I recommend this writing style:
 
     ### Sub-section
 
@@ -303,8 +305,6 @@ Don't do this:
 
 - Don't embed HTML. Try to use strictly plain text format
 - Don't use line breaks (two spaces at end of line)
-- Don't bother closing `###` headers
-    + move this to headings section
 
 Good habits
 -----------
