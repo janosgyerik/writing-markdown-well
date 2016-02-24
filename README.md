@@ -135,11 +135,11 @@ The bottom line is: deeply nested documents are hard to read, and therefore not 
 
 ### Semantic correctness
 
-A document should have only one title.
+A document should have a title. And only one title.
 The obvious formatting style for that is H1.
 Avoid multiple H1 headings within the same document.
 
-A document often has multiple sections.
+A document may have multiple sections.
 The obvious formatting style for section headers is H2.
 
 A document should have headings ordered by their levels,
