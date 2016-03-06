@@ -17,23 +17,20 @@ Markdown is also handy for simple technical documentation in general.
 What's wrong with Markdown?
 ---------------------------
 
-The syntax is too permissive: it allows sloppy writing styles that look fine in HTML but terrible in plain text.
-Different users adopt different writing styles,
-which further hurts readability and collaboration.
+The syntax is too permissive: it allows sloppy writing styles that look fine when rendered as HTML but hard to read in plain text.
+The spreading of different writing styles further hurts readability and collaboration.
 
 Markdown is not designed as a lazy way to create HTML, but many people use it that way.
 
-In particular, these are some common mistakes when writing Markdown:
+In particular, these are some of the common mistakes when writing Markdown:
 
-- Looks good when rendered as HTML, but looks horrible as plain text
+- Looks good when rendered as HTML, but hard to read as plain text
 
 - Semantic violations of headings and inline formatting styles
 
 - Using deeply nested or complicated structures
 
-- Using not well-supported features, lock-in to specific renderers
-
-- Other general writing style issues
+- Using not well-supported features, limiting readers to specific renderers
 
 Why this guide?
 ---------------
