@@ -6,20 +6,13 @@ An opinionated guide to writing readable, semantically correct, portable Markdow
 Why Markdown?
 -------------
 
-Markdown is a lightweight markup language. You write it in plain text.
-It's (meant to be) simple, easy to read, easy to write.
-It's often used to format README files.
+Markdown is a popular format for writing README files.
+It's simple, easy to read, easy to write, in plain text.
 
-GitHub, for example, explicitly recommends adding a `README.md` file when you create a new project:
+A well-written README file is crucial to the presentation of a project
+and for attracting contributors.
 
-![github-new-repo0](screenshots/github-new-repo0.png)
-
-GitHub doesn't ask what format you prefer,
-it just assumes you want to use Markdown:
-
-![github-new-repo1](screenshots/github-new-repo1.png)
-
-It's also handy for other technical documentation in a project.
+Markdown is also handy for simple technical documentation in general.
 
 What's wrong with Markdown?
 ---------------------------
