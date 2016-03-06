@@ -47,8 +47,8 @@ Markdown was designed to be [nicely readable as plain text][philosophy].
 
 You may not normally read it in plain text form, but sometimes you might still need to.
 
-Other readers might read your documents in plain text.
-Of course! The format was designed for that!
+Your readers may want to read your documents in plain text.
+(Of course! The format was designed for that!)
 
 When you update the document later, you typically have to work with the plain text form.
 
