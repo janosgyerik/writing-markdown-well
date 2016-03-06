@@ -32,8 +32,8 @@ In particular, these are some of the common mistakes when writing Markdown:
 
 - Using not well-supported features, limiting readers to specific renderers
 
-Why this guide?
----------------
+What is this guide?
+-------------------
 
 This is a collection of tips and recommendations when using Markdown,
 based on my experience of writing and reading a lot in this format.
