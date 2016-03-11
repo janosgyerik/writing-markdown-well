@@ -301,6 +301,7 @@ Don't do this:
 - Don't use line breaks (two spaces at end of line)
 - Don't use tables. The plain text formatting rules are not portable
 - Don't use complicated features. Try to simplify the document instead
+- Don't use a WYSIWYG editor to edit Markdown. Such editors tend to generate poor Markdown
 - If format is really so important, use HTML or some other rich text format.
 
 Not concluded
