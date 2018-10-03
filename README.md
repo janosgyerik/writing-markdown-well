@@ -6,19 +6,17 @@ An opinionated guide to writing readable, semantically correct, portable Markdow
 Why Markdown?
 -------------
 
-Markdown is a popular format for writing README files.
+Markdown is a popular format for writing README files and documentation.
 It's simple, easy to read, easy to write, in plain text.
 
-A well-written README file is crucial to the presentation of a project
-and for attracting contributors.
-
-Markdown is also handy for simple technical documentation in general.
+Easy to read documentation is crucial to make your project look good and attract contributors.
 
 What's wrong with Markdown?
 ---------------------------
 
-The syntax is too permissive: it allows sloppy writing styles that look fine when rendered as HTML but hard to read in plain text.
-The spreading of different writing styles further hurts readability and collaboration.
+The syntax is too permissive: it allows sloppy writing styles that look fine
+when rendered as HTML but hard to read in plain text.
+Inconsistent writing styles within a project or organization further hurts readability and collaboration.
 
 Markdown is not designed as a lazy way to create HTML, but many people use it that way.
 
@@ -26,11 +24,11 @@ In particular, these are some of the common mistakes when writing Markdown:
 
 - Looks good when rendered as HTML, but hard to read as plain text
 
-- Semantic violations of headings and inline formatting styles
+- Inappropriate use of headings and inline formatting styles
 
 - Using deeply nested or complicated structures
 
-- Using not well-supported features, limiting readers to specific renderers
+- Using extended features that only work with specific renderers, such as GitHub Flavored Markdown
 
 What is this guide?
 -------------------
