@@ -7,34 +7,71 @@ Why Markdown?
 -------------
 
 Markdown is a popular format for writing README files and documentation.
-It's simple, easy to read, easy to write, in plain text.
+It's simple, easy to read and to write, in plain text.
 
-Easy to read documentation is crucial to make your project look good and attract contributors.
+Nicely readable documentation is crucial to make your project look attractive to users and contributors.
 
 What's wrong with Markdown?
 ---------------------------
 
-The syntax is too permissive: it allows sloppy writing styles that look fine
-when rendered as HTML but hard to read in plain text.
-Inconsistent writing styles within a project or organization further hurts readability and collaboration.
+There is no standard implementation, no standard style guide, no linters.
+As a result, people adopt different, inconsistent, incorrect, and non-portable writing styles.
 
-Markdown is not designed as a lazy way to create HTML, but many people use it that way.
+Examples of common mistakes:
 
-In particular, these are some of the common mistakes when writing Markdown:
+- "It doesn't matter that the plain text is hard to read,
+  as long as its rendered nicely in my viewer."
+  
+  Wrong. Markdown is designed to be easy to read in plain text format.
+  It's very annoying when you are working in a shell terminal
+  and the README is hard to read.
 
-- Looks good when rendered as HTML, but hard to read as plain text
+- "My viewer supports advanced formatting syntax, let's use it."
+  
+  Wrong. Don't limit your users to specific viewers. For example
+  GitHub Flavored Markdown supports "fenced code blocks". These
+  won't be rendered nicely in all viewers, and they look ugly in plain text.
+  Markdown should be nicely readable as plain text. Avoid custom extensions,
+  especially when they don't look good in plain text, and
+  especially when better alternatives exist. In this example,
+  indent with 4 spaces instead of using fenced code blocks.
 
-- Inappropriate use of headings and inline formatting styles
+- "In our viewer, H1 looks too big, so we use H3 instead."
+  
+  Wrong. The title of a document should be H1. Period. If you don't like
+  how it's rendered in your viewer, fix the stylesheet in your viewer,
+  or learn to live with it. Don't break the document's semantics for the sake of a viewer.
+  
+- "It's ok to write H3 after H1, skipping H2, because it looks good that way."
+  
+  Wrong. The heading levels in a document should be structured as
+  H1 containing H2, H2 containing H3, without skipping levels in the middle.
+  Don't let a crappy stylesheet used by the viewer force you to break the
+  logical structure of your documents.
 
-- Using deeply nested or complicated structures
+- "I prefer to use `**...**` instead of `*...*` because it looks better."
+  
+  Wrong. `*...*` means emphasis, `**...**` means stronger emphasis.
+  Don't choose formatting styles depending on how they look in your viewer.
+  Use the formatting styles for their intended purpose.
 
-- Using extended features that only work with specific renderers, such as GitHub Flavored Markdown
+- "I don't know what `***...***` means but I like the way it looks in my viewer."
+  
+  Wrong. Learn what it means, and use it only if it's appropriate for the purpose.
+
+- "I know this looks strange in plain text, but I have to write it this way
+  to make it look good."
+
+  Wrong. If you have to write something complicated, like nested elements
+  of various styles, such as nested bullet point and ordered lists,
+  or code blocks nested in bullet point lists, then look for ways to simplify
+  your document. Reorganize the content to eliminate complex structures.
 
 What is this guide?
 -------------------
 
-This is a collection of tips and recommendations when using Markdown,
-based on my experience of writing and reading a lot in this format.
+This is a collection of tips and recommendations when using Markdown.
+It is based on my experience of writing and reading a lot in this format.
 This is highly opinionated stuff, and you might not agree with everything.
 My goal is to prevent the most common issues mentioned above.
 
@@ -46,15 +83,17 @@ Markdown was designed to be [nicely readable as plain text][philosophy].
 You may not normally read it in plain text form, but sometimes you might still need to.
 
 Your readers may want to read your documents in plain text.
-(Of course! The format was designed for that!)
+And that's perfectly reasonable, since the format was designed for that.
 
-When you update the document later, you typically have to work with the plain text form.
+And let's not forget, when you make changes to a Markdown document,
+most probably you will work with the plain text form.
+If the plain text form is nicely readable, you will have an easier job updating it.
 
 Headings
 --------
 
 Headings drive the structure of a document.
-Therefore it's crucial that they are loud and clear.
+Therefore it's important that they follow a logical order.
 
 ### Top-level headings
 
