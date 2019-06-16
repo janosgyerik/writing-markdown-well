@@ -1,101 +1,336 @@
 Writing Markdown well
 =====================
 
-An opinionated guide to writing readable, semantically correct, portable Markdown.
+A guide to writing readable, semantically correct, portable Markdown.
 
 Why Markdown?
 -------------
 
-Markdown is a popular format for writing README files and documentation.
-It's simple, easy to read and to write, in plain text.
+Markdown is a popular format for writing README files and simple technical
+documents.  It's *meant to be* simple, easy to write and to read, in plain text.
 
-Nicely readable documentation is crucial to make your project look attractive to users and contributors.
+A well-written README file is crucial to making a project attractive to
+potential contributors.
 
-What's wrong with Markdown?
----------------------------
+Why this document?
+------------------
 
-There is no standard implementation, no standard style guide, no linters.
-As a result, people adopt different, inconsistent, incorrect, and non-portable writing styles.
+I often see markdown documents that miss some of the important guiding principles,
+leading to common mistakes such as:
 
-Examples of common mistakes:
+- Documents that only look good when rendered on GitHub.com or similar,
+  and look cryptic and crowded when reading in plain text in a shell console.
 
-- "It doesn't matter that the plain text is hard to read,
-  as long as its rendered nicely in my viewer."
-  
-  Wrong. Markdown is designed to be easy to read in plain text format.
-  It's very annoying when you are working in a shell terminal
-  and the README is hard to read.
+- Documents that violate semantic rules, for example skipping heading levels,
+  or not using inline styles for their intended purpose,
+  such as *emphasis* for `code statements` or vice versa.
 
-- "My viewer supports advanced formatting syntax, let's use it."
-  
-  Wrong. Don't limit your users to specific viewers. For example
-  GitHub Flavored Markdown supports "fenced code blocks". These
-  won't be rendered nicely in all viewers, and they look ugly in plain text.
-  Markdown should be nicely readable as plain text. Avoid custom extensions,
-  especially when they don't look good in plain text, and
-  especially when better alternatives exist. In this example,
-  indent with 4 spaces instead of using fenced code blocks.
+- Documents using deeply nested or complicated structures, pushing the limits of
+  the format, and very often not rendered consistently in different markdown
+  viewers.
 
-- "In our viewer, H1 looks too big, so we use H3 instead."
-  
-  Wrong. The title of a document should be H1. Period. If you don't like
-  how it's rendered in your viewer, fix the stylesheet in your viewer,
-  or learn to live with it. Don't break the document's semantics for the sake of a viewer.
-  
-- "It's ok to write H3 after H1, skipping H2, because it looks good that way."
-  
-  Wrong. The heading levels in a document should be structured as
-  H1 containing H2, H2 containing H3, without skipping levels in the middle.
-  Don't let a crappy stylesheet used by the viewer force you to break the
-  logical structure of your documents.
+- Documents using extensions that don't work consistently in different viewers,
+  sometimes for no benefit at all.
 
-- "I prefer to use `**...**` instead of `*...*` because it looks better."
-  
-  Wrong. `*...*` means emphasis, `**...**` means stronger emphasis.
-  Don't choose formatting styles depending on how they look in your viewer.
-  Use the formatting styles for their intended purpose.
+I believe the cause of these issues is simply a lack of awareness.  The general
+markdown syntax is permissive, which allows poorly written documents to pass for
+technically valid markdown.  It's difficult to catch and act on poor writing
+style, because it doesn't have so apparent consequences as for example
+programming errors.
 
-- "I don't know what `***...***` means but I like the way it looks in my viewer."
-  
-  Wrong. Learn what it means, and use it only if it's appropriate for the purpose.
+The purpose of this document is to serve as a style guide,
+in order to help you write markdown that is:
 
-- "I know this looks strange in plain text, but I have to write it this way
-  to make it look good."
+- easy to read in plain text format
+- semantically correct
+- portable: rendered consistently in common viewers
 
-  Wrong. If you have to write something complicated, like nested elements
-  of various styles, such as nested bullet point and ordered lists,
-  or code blocks nested in bullet point lists, then look for ways to simplify
-  your document. Reorganize the content to eliminate complex structures.
+The ideas in this guide come from years of practice writing and reading in this
+format.
 
-What is this guide?
--------------------
+The guidelines, TL;DR version
+-----------------------------
 
-This is a collection of tips and recommendations when using Markdown.
-It is based on my experience of writing and reading a lot in this format.
-This is highly opinionated stuff, and you might not agree with everything.
-My goal is to prevent the most common issues mentioned above.
+For the impatient, a compact list of recommendations.  If you're interested in
+the underlying reasoning, see the later sections.
 
-Why care about the plain text form?
------------------------------------
+### High-level structure
+
+Start a document with a top-level (h1) heading like this:
+
+    The title of the project
+    ========================
+
+Use as many `=` as letters in the title, for an "underline" effect.
+
+There should be only one title.
+
+Add a blank line after the title.
+
+Add a description paragraph.
+
+---
+
+If sections are needed, add an h2 heading like this:
+
+    The title of the section
+    ------------------------
+
+Use as many `-` as letters in the heading, for an "underline" effect.
+
+Add a blank line before and after the heading.
+
+---
+
+If sub-sections are needed, add an h3 heading like this:
+
+    ### The title of the sub-section
+
+Add a blank line before and after the heading.
+
+---
+
+Avoid deeper sub-sections, even if your markdown reader allows `####`, `#####`
+and more.
+
+---
+
+Heading levels should follow in logical order:
+h1 -> h2 -> h3.
+Do not skip heading levels.
+
+---
+
+As much as possible,
+avoid sub-headings directly under a heading like this:
+
+    Section
+    -------
+
+    ### Sub-section
+
+That is, the "Section" should have some description before starting
+"Sub-section".
+
+### Lists
+
+Unordered lists:
+
+- Prefix items with `-`, `*` or `+`
+- Use the same symbol consistently on the same level
+
+Numbered lists:
+
+- Prefix items with numbers and a dot, like `1.`, `2.`, ...
+- Don't use all the same numbers: it will confuse readers of the plain text form
+- Don't skip numbers: it will confuse readers of the plain text form
+
+Common tips:
+
+- Add a descriptive paragraph before the list
+  (just like this one, prefixed with "Common tips:")
+
+- Add a blank line before and after the list: the vertical space creates a clear
+  visual separation between distinct structural elements, which in my opinion
+  improves readability.
+
+- If it improves readability, then add a blank line between list items
+  - Do it consistently: either add a blank line between all items or not at all
+
+If a list item is too long, break the line, and continue writing from the
+begining of the text on the previous line, like this:
+
+    - If it improves readability,
+      then add a blank line between list items
+
+To add a nested list, indent by 2 spaces, like this:
+
+    - top-level item
+      - sub item
+        - sub-sub item
+
+Avoid complicated structures:
+
+- Avoid deeply nested lists (3 levels max)
+- Don't try to put code blocks or quoted text inside lists
+
+To avoid complicated structures, you probably need to rethink the organization
+of your content.  Don't try to fight it. Don't try to micro-optimize.
+
+### Inline styles
+
+Use `*emphasis*` for:
+
+- Keywords, *when defined for the first time* within the text
+- Key phrases, for example *single responsibility principle*
+
+Don't use emphasis for code.
+
+---
+
+Use `**strong emphasis**` for:
+
+I use them to highlight GUI elements, such as:
+
+- Window names
+- Menu item names
+- Button labels
+
+Don't use strong emphasis for code.
+
+---
+
+Use `` `inline code` `` for:
+
+- Class names
+- Function names
+- Variable names
+- Very short inline example code
+- Executable names
+- Filenames
+
+---
+
+Be mindful of the readability of the plain text form:
+
+- Avoid nesting inline styles
+- Avoid using too many inline styles on the same line
+
+### Code blocks
+
+Indent simple code blocks with 4 spaces, for example:
+
+    View status with:
+
+        git status -sb
+
+If the code snippet is long and it's difficult to prepend 4 spaces to each line,
+then using fenced code blocks can be acceptable, for example:
+
+    Example code:
+
+    ```
+    ...
+    # lots of code ...
+    ...
+    ```
+
+However, keep in mind that the document is likely to be read more often than written.
+
+Another acceptable case for fenced code blocks is when you can declare the language
+to get nice syntax highlighting in typical viewers, for example:
+
+    ```python
+    s = "Python syntax highlighting"
+    print s
+    ```
+
+Add a blank line before and after fenced code blocks.
+
+### Links
+
+Instead of embedded links like this:
+
+    The [syntax](https://daringfireball.net/projects/markdown/syntax) is too permissive.
+
+Prefer reference links like this:
+
+    The [syntax][syntax] is too permissive.
+
+    ...
+
+    [syntax]: https://daringfireball.net/projects/markdown/syntax
+
+Avoid bare URLs: better to give each URL a descriptive label.
+
+### Vertical space
+
+Use blank lines generously. Add a blank line before and after:
+
+- headings
+- lists
+- code blocks
+
+Don't use blank lines excessively. One blank line in between sections is enough.
+
+### Introductory paragraphs
+
+Publishers recommend to have an introductory paragraph in between:
+
+- headings
+- lists
+- code blocks
+
+### Other things to avoid
+
+Don't do this:
+
+- Don't embed HTML. Try to use strictly plain text format
+- Don't use line breaks (two spaces at end of line)
+- Don't use tables. The plain text formatting rules are not portable
+- Don't use complicated features. Try to simplify the document instead
+- If format is really so important, use HTML or some other rich text format.
+
+### Tooling
+
+There is a [markdownlint][markdownlint] tool to enforce the markdown style rules
+you want to enforce.
+
+Create `package.json`:
+
+    {
+      "scripts": {
+        "test": "markdownlint -i node_modules ."
+      },
+      "dependencies": {
+        "markdownlint-cli": "^0.16.0"
+      }
+    }
+
+Create `.markdownlint.yaml` file with custom configuration, for example:
+
+    # heading style
+    MD003:
+        style: setext_with_atx
+
+    # line length
+    MD013: false
+
+    # trailing punctuation in heading
+    MD026:
+        punctuation: ".,;:!"
+
+Why care about the plain text form anyway?
+------------------------------------------
 
 Markdown was designed to be [nicely readable as plain text][philosophy].
 
-You may not normally read it in plain text form, but sometimes you might still need to.
+You may not normally read it in plain text form, but sometimes you might still
+need to.
 
 Your readers may want to read your documents in plain text.
-And that's perfectly reasonable, since the format was designed for that.
+It's only natural, the format was designed for that!
 
-And let's not forget, when you make changes to a Markdown document,
-most probably you will work with the plain text form.
-If the plain text form is nicely readable, you will have an easier job updating it.
+When you need to make changes to a markdown document,
+you will probably have to work with the plain text form.
 
-Headings
---------
+For all the above reasons, it's good to write the document in a way to make it
+easy to read.  Keep in mind that a typical document is read far more often than
+it is written.  Therefore, the care you put into writing well is probably worth
+the investment.
+
+The guidelines, long version
+----------------------------
+
+More detailed than the TL;DR version above.
+Only where necessary, I tried to avoid unnecessary duplication.
+
+### Headings
 
 Headings drive the structure of a document.
-Therefore it's important that they follow a logical order.
+Therefore it's crucial that they are loud and clear.
 
-### Top-level headings
+---
 
 These are multiple equivalent ways to write a top-level heading:
 
@@ -104,26 +339,28 @@ These are multiple equivalent ways to write a top-level heading:
 
 All of these are normally rendered as H1 headings (`<h1>` in HTML).
 
-This writing stye is loud and clear, easily visible:
+I think this writing style looks unmistakably the top-level title,
+loud and clear, easily visible:
 
     Document
     ========
 
-### Section headings (right below top-level)
+---
 
-These are multiple equivalent ways to write a level-2 heading:
+These are multiple equivalent ways to write a level-2 section heading:
 
     Section     Section     Section     ## Section  ##Section
     -           ---         -------
 
 All of these are normally rendered as H2 headings (`<h2>` in HTML).
 
-This writing stye is loud and clear, easily visible:
+I think this writing style looks unmistakably like a main section heading,
+loud and clear, easily visible:
 
     Section
     -------
 
-### Level-3 headings
+---
 
 These are equivalent ways to write a level-3 heading:
 
@@ -137,18 +374,17 @@ So I recommend this writing style:
 
     ### Sub-section
 
-### Below level-3 headings
+---
 
+What about headings below level-3?
 The original "spec" allows level 4-6 headers like this:
 
     #### sub-sub-section, rendered as <h4>
     ##### sub-sub-sub-oh-who-cares, rendered as <h5>
     ###### whatever, rendered as <h6>
 
-Don't do this. Level 4-6 headers are often not well-supported.
-Many renderers use normal paragraph style for such headers.
-
-![headings-on-stackoverflow](screenshots/headings-on-stackoverflow.png)
+Since level 4-6 headers are often not well-supported,
+I think it's better to not use them.
 
 I suggest the following workarounds:
 
@@ -158,9 +394,12 @@ I suggest the following workarounds:
 
 - If the sub-sections are small enough, consider replacing them with bullet lists
 
-The bottom line is: deeply nested documents are hard to read, and therefore not very useful. Simplify the document to eliminate deeply nested headings.
+The bottom line is: deeply nested documents are hard to read, and therefore not
+very useful.  Simplify the document to eliminate deeply nested headings.
 
-### Semantic correctness
+---
+
+The writing style should be semantically correct.
 
 A document should have a title. And only one title.
 The obvious formatting style for that is H1.
@@ -178,195 +417,108 @@ with no gaps in between. For example:
 
 Order headings correctly and don't skip levels.
 
-### Other style tips
+---
 
-Put a blank line before and after headings.
+A blank line before and after headings makes them stand out more.  The vertical
+space creates a clear visual separation between distinct structural elements,
+which in my opinion improves readability.
 
-Don't nest headings without a paragraph in between.
+### Reasoning about lists
 
-Inline styles
--------------
+The reason I recommend to avoid complicated nested structures is because I've
+seen wide variation in the output in different viewers.  It happened that
+I spent precious time on getting the indentation right for my intended rendering
+in my favorite viewer, and then discovered that a collaborator gets a different,
+broken rendering in his favorite viewer.  By avoiding complex structures, I get
+more predictable output, less time wasted on boring indentation tweaks, and
+overall simpler documents that are actually easier to read.
 
-Use inline styles for:
+### Reasoning about inline styles
 
-- `*emphasis*`: enclose with single asterisks
-  - Don't use `_emphasis_`, it's less readable
-- `**strong emphasis**`: enclose with double asterisks
-  - Don't use `__strong emphasis__`, it's less readable
-- `` `inline code` ``: enclose with backticks
+Both `*emphasis*` and `_emphasis_` are usually rendered as italic.
+I prefer `*emphasis*` because:
 
-### Emphasis
+- I think the `*` stand out more than `_` when reading in plain text.  I find
+  that `_` is less visible, because it's not too different from a space
+  character.
 
-When to use *emphasis*?
+- I think that text enclosed in `_` may give the impression of rendering as
+  underlined text, which is not the case, and therefore would be misleading.
 
-- Anything you want to emphasize
-- Keywords, when defined for the first time within the text
-- Key phrases, for example *single responsibility principle*
+I apply the same reasoning for `**strong emphasis**` over `__strong emphasis__`.
 
-Don't use emphasis for code, commands (see inline code section below).
+I avoid `***doubly strong emphasis***` because I don't normally see a reason to
+emphasize something excessively, and for the same reason that I avoid nesting
+inline styles: I find that too many symbols on a line can clutter the content,
+reducing readability.
 
-### Strong emphasis
+I don't have a deep reason to use **strong emphasis** for GUI elements.  It
+seems the most appropriate style, I've been doing this for a long time, and I'm
+still happy with it.
 
-When to use **strong emphasis**?
+### Reasoning about code blocks
 
-I use them to highlight GUI elements, such as:
+The spec allows indenting with 4 spaces or a single tab.  I recommend to use
+4 spaces, because they look the same everywhere, while the display width of tabs
+may depend on the viewer.
 
-- Window names
-- Menu item names
-- Button labels
+I recommend to not use fenced code blocks, for two reasons:
 
-Don't use strong emphasis for code, commands (see inline code section below).
+- they are not supported by all viewers
+- they make the plain text form look cryptic
 
-### Inline code
+Especially when a code snippet is just a few lines, and there are multiple code
+snippets and paragraphs interleaved.
 
-When to use `inline code`?
+For example, I find this a lot easier to read in plain text:
 
-- Class names
-- Function names
-- Variable names
-- Very short inline example code
-- Executable names
-- Filenames
-
-### Mixing inline styles on the same line
-
-Is this easy to read?
-
-    The quick *brown fox* **jumps** *over* the lazy **dog**
-
-Not really.
-
-- Avoid nesting inline styles
-- Avoid using too many inline styles on the same line
-
-Code blocks
------------
-
-The spec allows indenting with 4 spaces or a single tab.
-I suggest to use 4 spaces. For the usual reason: 4 spaces will look the same everywhere, while the display width of tabs may depend on the viewer.
-
-Here's one way to format code blocks:
-
-    View status with:
+    View the worktree status with:
 
         git status -sb
 
-Here's an equivalent way to format code blocks:
+    See the details of what changed with:
 
-    View status with:
+        git diff --cached --check
+
+Compared to this:
+
+    View the worktree status with:
     ```
     git status -sb
     ```
+    See the details of what changed with:
+    ```
+    git diff --cached --check
+    ```
 
-What's wrong with fenced code blocks?
+If you *must* use fenced code blocks, then the same as with other block
+elements, I recommend a blank line before and after it, for a visual separation.
 
-- Not supported so well as indented code blocks
-- Doesn't look as clean and obvious in plain text
+### Reasoning about other things to avoid
 
-What's good about fenced code blocks?
+- The reason to avoid embedding HTML is because it's a sign that the document
+  should probably not be written in markdown, but HTML or other rich format.
 
-They can allow language-specific syntax highlighting.
-It's OK to use fenced code blocks when syntax highlighting is important and supported by the intended renderer.
+- The reason to not use trailing spaces a the end of lines is because
+  2 or more trailing spaces have the special meaning of a linebreak in smart viewers,
+  but they are invisible in plain text form, which is confusing.
 
-Do add a blank line before and after fenced code blocks.
+- The reason to not use tables is because they are not a standard markdown feature,
+  so you cannot count on consistent rendering. It's another sign that the document
+  should probably not be written in markdown, but HTML or other rich format.
 
-Lists
------
-
-Unordered lists:
-
-- Prefix items with `-`, `*` or `+`
-- Whichever symbol is fine, just use consistently, don't mix them
-- I prefer `-` because it's easiest to write on a querty keyboard
-- Tip: sometimes nested lists are easier to read if using a different symbol
-
-Numbered lists:
-
-- Prefix items with numbers and a dot, like `1.`, `2.`, ...
-- The spec allows skipping numbers, or even `1.`, `1.`, `1.` but don't do that, as it will only look good in HTML, not in plain text
-
-Other style tips:
-
-- Avoid complicated/sophisticated structure, for example:
-  - Don't try to put code blocks inside lists: it's complicated and poorly supported
-  - Avoid deep nesting
-
-- Add or omit empty lines between list items to improve readability
-  - Do it consistently: either put an empty line between all items or none
-
-Links
------
-
-Instead of embedded links like this:
-
-    The [syntax](https://daringfireball.net/projects/markdown/syntax) is too permissive.
-
-Prefer reference links like this:
-
-    The [syntax][syntax] is too permissive.
-
-    ...
-
-    [syntax]: https://daringfireball.net/projects/markdown/syntax
-
-Vertical spacing
-----------------
-
-Use blank lines generously. Add a blank line before and after:
-
-- headings
-- lists
-- code blocks
-
-Don't use blank lines excessively. One blank line in between sections should be enough.
-
-Introductory paragraphs
------------------------
-
-Publishers recommend to have an introductory paragraph in between:
-
-- headings
-- lists
-- code blocks
-
-Things to avoid
----------------
-
-Don't do this:
-
-- Don't embed HTML. Try to use strictly plain text format
-- Don't use line breaks (two spaces at end of line)
-- Don't use tables. The plain text formatting rules are not portable
-- Don't use complicated features. Try to simplify the document instead
-- Don't use a WYSIWYG editor to edit Markdown. Such editors tend to generate poor Markdown
-- If format is really so important, use HTML or some other rich text format.
-
-Not concluded
--------------
-
-Here's a summary of features I don't have a strong opinion (and recommendation) about, yet:
-
-- Horizontal rules
-  - https://daringfireball.net/projects/markdown/syntax#hr
-  - I use `---` because it's easy to type and easy enough to see
-  - Definitely don't use underscores (not aligned in the middle of the line)
-  - Definitely use consistent format
-
-- Use different symbols at different nesting levels of lists?
-
-- How to indent multi-line numbered lists and bullet lists?
+- The reason to not use complicated features is to keep the plain text form,
+  and the document easy to read, and simple is usually easier to read than complex.
 
 See also
 --------
 
 Related links:
 
-- http://commonmark.org/
-- http://blog.codinghorror.com/standard-flavored-markdown/
-- http://www.adamhyde.net/whats-wrong-with-markdown/
+- [A strongly defined, highly compatible specification of Markdown](http://commonmark.org/)
+- [Standard Flavored Markdown](http://blog.codinghorror.com/standard-flavored-markdown/)
+- [What’s Wrong with Markdown?](http://www.adamhyde.net/whats-wrong-with-markdown/)
 
-[spec]: http://commonmark.org/
-[standard-flavored-markdown]: http://blog.codinghorror.com/standard-flavored-markdown/
 [syntax]: https://daringfireball.net/projects/markdown/syntax
 [philosophy]: https://daringfireball.net/projects/markdown/syntax#philosophy
-[comparable]: https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html
+[markdownlint]: https://github.com/DavidAnson/markdownlint
