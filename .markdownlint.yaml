@@ -1,0 +1,12 @@
+# heading style
+MD003:
+    style: setext_with_atx
+
+# line length
+#MD013: false
+# in vim, do :setl tw=80
+# and at the beginning of each long paragraph: gq}
+
+# trailing punctuation in heading
+MD026:
+    punctuation: ".,;:!"

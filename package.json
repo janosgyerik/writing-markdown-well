@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "test": "markdownlint -i node_modules ."
+  },
+  "dependencies": {
+    "markdownlint-cli": "^0.16.0"
+  }
+}
