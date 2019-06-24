@@ -7,7 +7,8 @@ Why Markdown?
 -------------
 
 Markdown is a popular format for writing README files and simple technical
-documents.  It's *meant to be* simple, easy to write and to read, in plain text.
+documents. It's *meant to be* simple, easy to write, easy to read, in plain
+text.
 
 A well-written README file is crucial to making a project attractive to
 potential contributors.
@@ -21,161 +22,185 @@ I often see markdown documents that are very hard to read, for example:
   and look very messy when reading in plain text in a shell console.
 
 - Documents that violate semantic rules, for example skipping heading levels,
-  or not using inline styles for their intended purpose, for example
-  using *emphasis* for `code statements` or vice versa.
+  or not using inline styles for their intended purpose.
 
 - Documents using deeply nested or complicated structures, which are not
-  rendered the same way in different markdown viewers, and hard to read in
-  plain text form.
+  rendered the same way in different markdown rendering engines, and hard to
+  read in plain text form.
 
-- Documents using extensions that don't work consistently in different viewers,
-  and don't look good in plain text form.
+- Documents using extensions that don't work consistently in different
+  rendering engines, and don't look good in plain text form.
 
-I believe the cause of these issues is simply a lack of awareness.  The general
-markdown syntax is overly permissive: even poorly written documents pass for
-technically valid markdown.  It's difficult to catch and act on poor writing
+I believe the cause of these issues is simply a lack of awareness. The general
+markdown syntax is too permissive: even poorly written documents can pass for
+technically valid markdown. It's difficult to catch and act on poor writing
 style, because it doesn't have such grave consequences as programming errors.
 
 The goal of this document is to help you write markdown that is:
 
 - easy to read in plain text form
 - semantically correct
-- portable: renders consistently in common viewers
+- portable: renders consistently in common rendering engines
 
-I aim to achieve that mainly by reducing your choices: when there are many ways
-to achive the same thing, I try to suggest the one that's in my opinion better
-than the others, and explain why.  With fewer choices to make about syntax, as
-a nice side effect, hopefully you will have more time and energy left to focus
-on what really matters: your content.
+I aim to achieve that mainly by narrowing down your choices: when there are
+many ways to achive the same thing, I pick the one that is better than the
+others, and explain why. With fewer choices to make about syntax, hopefully you
+will have more time and energy to focus on what really matters: your content.
 
-Some of my suggestions may seem more typing, more work to do.  That's expected:
-the ideas here are to optimize documents for reading.  I think minor
-inconveniences in writing are acceptable.
+Some of the suggested techniques will be more tedious to write than some
+alternatives.  This is not unexpected, because the goal is to optimize for
+reading, not for writing.  This goal is based on the assumption that
+documentation is read far more than it is written.
 
 Why care about the plain text form anyway?
 ------------------------------------------
 
 Markdown was designed to be [nicely readable as plain text][philosophy].
 
-You may not normally read it in plain text form, but sometimes you might still
-need to.
+Even if you don't normally read markdown documents in their plain text form,
+other consumers may want to do that, and they be dismayed by the project if you
+didn't put enough care into writing it well. You may need to read in plain text
+too, at least in the text editor when you make changes to the document later.
 
-Your readers may want to read your documents in plain text.
-It's only natural, the format was designed for that!
+Therefore, it's good to write a document in a way that's easy to read. If
+documentation is read far more than it is written, then the care you put into
+writing well is worth the investment.
 
-When you need to make changes to a markdown document,
-you will probably have to work with the plain text form.
+High-level structures
+---------------------
 
-For all the above reasons, it's good to write the document in a way to make it
-easy to read.  Keep in mind that a typical document is read far more often than
-it is written.  Therefore, the care you put into writing well is probably worth
-the investment.
+Headings drive the structure of a document. Therefore it's important to make
+them stand out clearly.
 
-How to create high-level structures well
-----------------------------------------
-
-Headings drive the structure of a document.  Therefore it's crucial that they
-are loud and clear.
-
-### Give the document a title
+### The title
 
 Start a document with a top-level heading (h1) like this:
 
-    The title of the project
-    ========================
+    Writing Markdown well
+    =====================
 
-Use as many `=` as letters in the title, for an "underline" effect.  This way
-is more typing than other writing styles, but I think this style stands out the
-most clearly as a top-level title.
+Use as many `=` as letters in the title, for an "underline" effect. This
+writing style is admittedly more tedious than others, but I think it stands out
+the most clearly as a top-level title. I agree it's a pain in the ass that when
+you modify the title you may have to delete or add `=` to fix the underlining,
+but for the sake of readability, it's a fair price to pay.
 
-A document should have one and only one title, therefore it makes sense that
-this formatting style should only appear once.
+A document should have one and only one title, therefore this formatting style
+should only appear once.
 
 Add a blank line after the title, to make it stand out even more, and to mimic
-the vertical padding added around titles in rich text formats.
+the padding added around titles in rich text formats.
 
-Add a tagline or a descriptive paragraph before adding other formatting
-elements.  For example a section title following a title directly is not
-considered good form by book publishers.  Headings should not be "empty",
-it's good if they have some content.
+Add a tagline or a short descriptive paragraph after the title.
 
-### How to add sections
+### Section headings
 
 Write a section heading (h2) like this:
 
-    The title of the section
-    ------------------------
+    High-level structures
+    ---------------------
 
-Use as many `-` as letters in the heading, for an "underline" effect.  This way
-is more typing than other writing styles, but I think this style stands out the
-most clearly as a section title.
+Use as many `-` as letters in the heading, for an "underline" effect. This
+writing style is admittedly more tedious than others, but I think it stands out
+the most clearly as a section heading. I agree it's a pain in the ass that when
+you modify the section heading you may have to delete or add `-` to fix the
+underlining, but for the sake of readability, it's a fair price to pay.
 
-Add a blank line before and after the heading, to make it stand out even more,
-and to mimic the vertical padding added around titles in rich text formats.
+Add a blank line before and after the section heading, to make it stand out
+even more, and to mimic the vertical padding added around section headings in
+rich text formats.
 
-### How to add sub-sections
+### Sub-section headings
 
 Write a sub-section heading (h3) like this:
 
-    ### The title of the sub-section
+    ### Heading levels should follow logical order
 
-The only alternative is similar to this style, with `###` added at the end.
-Since human eyes read from left to write, the trailing `###` do not add new
-information the eyes haven't seen already, so I find that style redundant, and
-also kind of ugly.
+There is only one alternative writing style:
 
-Add a blank line before and after the heading, for the same reason as section
-titles.
+    ### Heading levels should follow logical order ###
 
-### How to add deeper sub-sections
+That is, by adding `###` at the end of the line to match the beginning. Since
+human eyes read from left to write, I think the trailing `###` don't add much
+value for the reader, so I find that style redundant. Also kind of ugly.
 
-I suggest to avoid deeper sub-sections. Some markdown viewers allow `####`,
-`#####` and more, but not all. In viewers that don't allow the deeper levels,
-the document will not look good. I take that as a hint to keep markdown
-documents simple. When you feel the need for deeper sub-sections, I suggest to
-either simplify the overall structure, or to split the document to multiple
-files.
+Add a blank line before and after the sub-section heading, to make it stand out
+a bit more, and to mimic the vertical padding added around sub-section headings
+in rich text formats.
 
-### Make sure heading levels follow logical order
+### Avoid deeper sub-sections
 
-Heading levels should follow in logical order: h1 -> h2 -> h3.
-In other words, don't skip h2 between an h1 and an h3.
+Some markdown rendering engines allow deeply nested sub-sections using `####`,
+`#####` and `######`, but many don't (such as Stack Overflow).  Even when
+a rendering engine allows such deep levels, the styling of these headings may
+look surprising, and sometimes even ugly.
 
-How to create block structures well
------------------------------------
+For a consistent reading experience in all rendering engines, I suggest to
+avoid these deeper levels altogether.  Another good reason to avoid deep
+hierarchies is to keep the document simple, which tends to be easier to read
+and understand, therefore more enjoyable.
 
-Some block structures can be written in many ways, some better than others.
+When you feel the need for deeper sub-sections, I suggest to either simplify
+the overall structure, or to split the document to multiple files.
 
-### How to write lists
+### Heading levels should follow logical order
+
+A document should be structured as:
+
+- the title
+  - a section
+    - optional: a sub-section
+    - optional: another sub-section
+    - ....
+  - another section
+  - ...
+
+That is, there should not be a sub-section directly after the title.
+
+Block structures
+----------------
+
+Block structures span entire lines, and usually consist of mulitple lines.
+In Markdown they are:
+
+- lists
+- code blocks
+- quoted text
+
+### Lists
+
+Lists can be unordered or numbered.
 
 Unordered lists:
 
 - Prefix items with `-`, `*` or `+`
 - Use the same symbol consistently on the same level
+  - Most rendering engines completely disregard whichever symbol you use, but
+    consistency helps a lot when reading in plain text form
 
 Numbered lists:
 
-- Prefix items with numbers and a dot, like `1.`, `2.`, ...
+- Prefix items with numbers and a dot: `1.`, `2.`, ...
 - Don't use all the same numbers: it will confuse readers of the plain text form
 - Don't skip numbers: it will confuse readers of the plain text form
 
 Common tips:
 
-- Add a descriptive paragraph before the list
-  (just like this one, prefixed with "Common tips:")
+- Add a descriptive paragraph before the list.
+  For example *this list you're reading* is introduced with "Common tips:".
 
-- Add a blank line before and after the list: the vertical space creates a clear
-  visual separation between distinct structural elements, which in my opinion
+- Add a blank line before and after the list: the vertical space creates
+  a clear visual separation between distinct structural elements, which
   improves readability.
 
 - If it improves readability, then add a blank line between list items
   - Do it consistently: either add a blank line between all items or not at all
 
-If a list item is too long, break the line, and continue writing from the
+When a list item is too long, break the line, and continue writing from the
 begining of the text on the previous line, like this:
 
-    - If it improves readability,
-      then add a blank line between list items
+    - When a list item is too long, break the line, and continue writing from
+      the begining of the text on the previous line, ...
 
 To add a nested list, indent by 2 spaces, like this:
 
@@ -183,17 +208,15 @@ To add a nested list, indent by 2 spaces, like this:
       - sub item
         - sub-sub item
 
-Avoid complicated structures:
+Lists with deep hierarchy are not handled well by common rendering engines,
+therefore I suggest to avoid them completely, keeping to maximum 3 levels.
 
-- Avoid deeply nested lists (3 levels max)
-- Don't try to put code blocks or quoted text inside lists
+The same goes for embedding code blocks or quoted text inside lists. They are
+not handled consistently or sometimes not at all.
 
-To avoid complicated structures, you probably need to rethink the organization
-of your content.  Don't try to fight it. Don't try to micro-optimize.
+### Code blocks
 
-### How to write code blocks
-
-Indent simple code snippets with 4 spaces, for example:
+To format as a code block, indent code snippets with 4 spaces, for example:
 
     View status with:
 
@@ -211,8 +234,9 @@ example:
     ...
     ```
 
-Another acceptable case for fenced code blocks is when you can declare the language
-to get nice syntax highlighting in typical viewers, for example:
+Another acceptable case for fenced code blocks is when you can declare the
+language to get nice syntax highlighting in typical rendering engines, for
+example:
 
     ```python
     s = "Python syntax highlighting"
@@ -222,10 +246,15 @@ to get nice syntax highlighting in typical viewers, for example:
 Add a blank line before and after fenced code blocks, to make it easy to
 distinguish from other texts around it.
 
-Don't try to nest code blocks inside other block elements.  Even if you get the
-syntax right for one specific viewer, it's likely to look incorrect in another
-common viewer.  I think it's not worth the effort.  It's better to rethink and
-simplify the document structure so that nesting is not necessary.
+Don't try to nest code blocks inside lists, because it's not supported
+consistently across rendering engines.
+
+For example, in step by step guides I often feel natural to use bullet point
+lists with some items containing code blocks of shell command instructions. In
+some rendering engines code blocks can be embedded by indenting by the correct
+number of spaces, the behavior is not consistent in all rendering engines.
+Therefore, reluctantly, I replace such bullet point lists with paragraphs, which
+are handled consistently everywhere.
 
 ### Use blank lines generously
 
@@ -238,7 +267,7 @@ I think it's good to add a blank line before and after:
 The generous vertical spacing creates a clear visual separation between
 distinct structural elements, which in my opinion improves readability.
 
-No need to use blank lines excessively. One blank line in between block
+No need to use blank lines excessively. One blank line between block
 elements is enough.
 
 ### Use introductory paragraphs before block elements
@@ -249,13 +278,13 @@ Publishers recommend to have an introductory paragraph in between:
 - lists
 - code blocks
 
-How to use inline styles correctly
-----------------------------------
+Using inline styles correctly
+-----------------------------
 
 A document is easier to read when the inline styles are used correctly for
 their intended purpose.
 
-### When to use *emphasis*
+### Emphasis
 
 Use `*emphasis*` for:
 
@@ -267,14 +296,13 @@ Don't use emphasis for code, `` `code style` `` is appropriate for that.
 Both `*emphasis*` and `_emphasis_` are usually rendered as italic.
 I prefer `*emphasis*` because:
 
-- I think the `*` stand out more than `_` when reading in plain text.  I find
-  that `_` is less visible, because it's not too different from a space
-  character.
+- I think the pair of `*` stand out more than `_` when reading in plain text.
+  I find that `_` is less visible, because it's too similar to a simple space.
 
 - I think that text enclosed in `_` may give the impression of rendering as
-  underlined text, which is not the case, and therefore would be misleading.
+  underlined text, which is not the case, and therefore misleading.
 
-### When to use **strong emphasis**
+### Strong emphasis
 
 I use `**strong emphasis**` to highlight GUI elements, such as:
 
@@ -284,34 +312,32 @@ I use `**strong emphasis**` to highlight GUI elements, such as:
 
 Don't use strong emphasis for code, `` `code style` `` is appropriate for that.
 
+I apply the same reasoning for `**strong emphasis**` over `__strong emphasis__`
+as in the previous section about emphasis.
+
 I don't have a deep reason to use **strong emphasis** for GUI elements.  It
 seems the most appropriate style, I've been doing this for a long time, and I'm
 still happy with it.
 
-I apply the same reasoning for `**strong emphasis**` over `__strong emphasis__`
-as in the previous section about emphasis.
-
-### When to use `` `inline code` ``
+### Inline code
 
 Use `` `inline code` `` for:
 
-- Class names
-- Function names
-- Variable names
+- Class, function, variable names
 - Very short inline example code
-- Executable names
-- Filenames
+- Names of executables, programs
+- Filenames, filesystem paths
+- Anything "code-like"
 
-### When to combine inline styles
+### Avoid combining inline styles
 
-I think almost never.
-
-Nesting inline styles can be hard to read in plain text form.
+I think that nesting inline styles can be hard to read in plain text form,
+because of visual overload of symbols.
 
 Similarly, having multiple terms on a single line with some inline style can
 make the text hard to read in plain text form.
 
-### How to embed links
+### Embedding links
 
 The embedded URL in this format disrupts the flow of the text in plain text form:
 
@@ -319,7 +345,7 @@ The embedded URL in this format disrupts the flow of the text in plain text form
 
 In such cases it's better to use reference links, like this:
 
-    The [syntax][syntax] is too permissive.
+    The [syntax] is too permissive.
 
     ...
 
@@ -328,7 +354,7 @@ In such cases it's better to use reference links, like this:
 Other things to avoid
 ---------------------
 
-Don't do this:
+Some other techniques and writing styles I recommend to avoid.
 
 - Don't embed HTML. Try to use strictly plain text format.
   - Wanting to embed HTML is a sign that the document is becoming too complex
