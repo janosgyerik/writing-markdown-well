@@ -384,7 +384,7 @@ Some other techniques and writing styles I recommend to avoid.
 - Don't use complicated features. Try to simplify the document instead.
   - A complex document is likely hard to read, especially in plain text form.
 
-Tooling
+Linting
 -------
 
 There is a [markdownlint][markdownlint] tool to enforce the markdown style rules
