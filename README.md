@@ -43,7 +43,7 @@ The goal of this document is to help you write markdown that is:
 - portable: renders consistently in common rendering engines
 
 I aim to achieve that mainly by narrowing down your choices: when there are
-many ways to achive the same thing, I pick the one that is better than the
+many ways to achieve the same thing, I pick the one that is better than the
 others, and explain why. With fewer choices to make about syntax, hopefully you
 will have more time and energy to focus on what really matters: your content.
 
