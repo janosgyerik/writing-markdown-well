@@ -401,6 +401,8 @@ Create `package.json`:
       }
     }
 
+Install the linter by running `npm install`.
+
 Create `.markdownlint.yaml` file with custom configuration, for example:
 
     # heading style
@@ -413,6 +415,10 @@ Create `.markdownlint.yaml` file with custom configuration, for example:
     # trailing punctuation in heading
     MD026:
         punctuation: ".,;:!"
+
+Run the linter to verify the markdown documents follow the configured rules:
+
+    npm test
 
 Related articles
 ----------------
