@@ -49,8 +49,9 @@ will have more time and energy to focus on what really matters: your content.
 
 Some of the suggested techniques will be more tedious to write than some
 alternatives.  This is not unexpected, because the goal is to optimize for
-reading, not for writing.  This goal is based on the assumption that
-documentation is read far more than it is written.
+reading, not for writing.  This goal is based on the expectation that
+documentation is read far more than it is written.  (Without that expectation
+there's probably no point writing it.)
 
 Why care about the plain text form anyway?
 ------------------------------------------
