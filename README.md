@@ -197,7 +197,7 @@ begining of the text on the previous line, like this:
     - When a list item is too long, break the line, and continue writing from
       the begining of the text on the previous line, ...
 
-To add a nested list, indent by 2 spaces, like this:
+To add a nested list, I indent by 2 spaces, like this:
 
     - top-level item
       - sub item
