@@ -226,9 +226,7 @@ To format as a code block, indent code snippets with 4 spaces, for example:
 
         git status -sb
 
-If the code snippet is long and it's difficult to prepend 4 spaces to each
-line, then using fenced code blocks can be acceptable, though not great, for
-example:
+An alternative syntax is to use so-called *fenced code blocks*, like this:
 
     Example code:
 
@@ -238,9 +236,17 @@ example:
     ...
     ```
 
-Another acceptable case for fenced code blocks is when you can declare the
-language to get nice syntax highlighting in typical rendering engines, and to
-explicitly signal to the reader the language of the source code. Example:
+However, this syntax is not standard, and using it reduces the portability of
+the document.  Also, I find very often that this syntax hurts readability.
+I prefer indenting with spaces to make the code block stand out within the
+text, even if it's tedious to type.  (Again, keep in mind the goal to optimize
+for reading, not for writing.)
+
+If you really want to use fenced code blocks, for example because your typical
+renderer will use nice syntax highlighting for it, then make sure to specify
+the language of the source code. This may be necessary for the syntax
+highlighting, and at the same time, it's probably a good thing to signal to the
+reader explicitly the language of the source code, for example:
 
     ```python
     s = "Python syntax highlighting"
