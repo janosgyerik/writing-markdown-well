@@ -260,11 +260,11 @@ Don't try to nest code blocks inside lists, because it's not supported
 consistently across rendering engines.
 
 For example, in step by step guides I often feel natural to use bullet point
-lists with some items containing code blocks of shell command instructions. In
-some rendering engines code blocks can be embedded by indenting by the correct
-number of spaces, the behavior is not consistent in all rendering engines.
-Therefore, reluctantly, I replace such bullet point lists with paragraphs, which
-are handled consistently everywhere.
+lists with some items containing code blocks of shell command instructions.
+Although in some rendering engines code blocks can be embedded by indenting
+with the correct number of spaces, the behavior is not consistent in all
+rendering engines.  Therefore, reluctantly, I replace such bullet point lists
+with paragraphs, which are handled consistently everywhere.
 
 ### Use blank lines generously
 
