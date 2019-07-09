@@ -7,11 +7,11 @@ Why Markdown?
 -------------
 
 Markdown is a popular format for writing README files and simple technical
-documents. It's *meant to be* simple, easy to write, easy to read, in plain
-text.
+documents. It's meant to be [simple, easy to write, easy to read, in plain
+text][philosophy].
 
-A well-written README file is crucial to making a project attractive to
-potential contributors.
+A well-written README file can make a project more attractive to potential
+users and contributors.
 
 Why this document?
 ------------------
@@ -43,14 +43,15 @@ The goal of this document is to help you write markdown that is:
 - portable: renders consistently in common rendering engines
 
 I aim to achieve that mainly by narrowing down your choices: when there are
-many ways to achive the same thing, I pick the one that is better than the
+many ways to achieve the same thing, I pick the one that is better than the
 others, and explain why. With fewer choices to make about syntax, hopefully you
 will have more time and energy to focus on what really matters: your content.
 
 Some of the suggested techniques will be more tedious to write than some
 alternatives.  This is not unexpected, because the goal is to optimize for
-reading, not for writing.  This goal is based on the assumption that
-documentation is read far more than it is written.
+reading, not for writing.  This goal is based on the expectation that
+documentation is read far more than it is written.  (Without that expectation
+there's probably no point writing it.)
 
 Why care about the plain text form anyway?
 ------------------------------------------
@@ -64,7 +65,8 @@ too, at least in the text editor when you make changes to the document later.
 
 Therefore, it's good to write a document in a way that's easy to read. If
 documentation is read far more than it is written, then the care you put into
-writing well is worth the investment.
+writing well is worth the investment. (If you're reading this text in
+a rendered form, take a look at the [plain text form here][source-code].)
 
 High-level structures
 ---------------------
@@ -100,15 +102,8 @@ Write a section heading (h2) like this:
     High-level structures
     ---------------------
 
-Use as many `-` as letters in the heading, for an "underline" effect. This
-writing style is admittedly more tedious than others, but I think it stands out
-the most clearly as a section heading. I agree it's a pain in the ass that when
-you modify the section heading you may have to delete or add `-` to fix the
-underlining, but for the sake of readability, it's a fair price to pay.
-
-Add a blank line before and after the section heading, to make it stand out
-even more, and to mimic the vertical padding added around section headings in
-rich text formats.
+The reasoning for this writing style is basically the same as for the top-level
+title in the previous section.
 
 ### Sub-section headings
 
@@ -202,11 +197,20 @@ begining of the text on the previous line, like this:
     - When a list item is too long, break the line, and continue writing from
       the begining of the text on the previous line, ...
 
-To add a nested list, indent by 2 spaces, like this:
+To add a nested list, I indent by 2 spaces, like this:
 
     - top-level item
       - sub item
         - sub-sub item
+
+Note that the ["spec"][syntax] doesn't actually mention anything about nesting
+lists. I recommend 2 spaces to indent nested items because I find it better
+than other alternatives:
+
+- 1 space may not stand out enough as a nested item, it may look like a typo
+- More than 2 spaces may be tedious to type
+- I dislike tabs, because they are basically invisible characters, and the
+  reading experience may depend on the viewer tool
 
 Lists with deep hierarchy are not handled well by common rendering engines,
 therefore I suggest to avoid them completely, keeping to maximum 3 levels.
@@ -222,9 +226,7 @@ To format as a code block, indent code snippets with 4 spaces, for example:
 
         git status -sb
 
-If the code snippet is long and it's difficult to prepend 4 spaces to each
-line, then using fenced code blocks can be acceptable, though not great, for
-example:
+An alternative syntax is to use so-called *fenced code blocks*, like this:
 
     Example code:
 
@@ -234,9 +236,17 @@ example:
     ...
     ```
 
-Another acceptable case for fenced code blocks is when you can declare the
-language to get nice syntax highlighting in typical rendering engines, for
-example:
+However, this syntax is not standard, and using it reduces the portability of
+the document.  Also, I find very often that this syntax hurts readability.
+I prefer indenting with spaces to make the code block stand out within the
+text, even if it's tedious to type.  (Again, keep in mind the goal to optimize
+for reading, not for writing.)
+
+If you really want to use fenced code blocks, for example because your typical
+renderer will use nice syntax highlighting for it, then make sure to specify
+the language of the source code. This may be necessary for the syntax
+highlighting, and at the same time, it's probably a good thing to signal to the
+reader explicitly the language of the source code, for example:
 
     ```python
     s = "Python syntax highlighting"
@@ -250,11 +260,11 @@ Don't try to nest code blocks inside lists, because it's not supported
 consistently across rendering engines.
 
 For example, in step by step guides I often feel natural to use bullet point
-lists with some items containing code blocks of shell command instructions. In
-some rendering engines code blocks can be embedded by indenting by the correct
-number of spaces, the behavior is not consistent in all rendering engines.
-Therefore, reluctantly, I replace such bullet point lists with paragraphs, which
-are handled consistently everywhere.
+lists with some items containing code blocks of shell command instructions.
+Although in some rendering engines code blocks can be embedded by indenting
+with the correct number of spaces, the behavior is not consistent in all
+rendering engines.  Therefore, reluctantly, I replace such bullet point lists
+with paragraphs, which are handled consistently everywhere.
 
 ### Use blank lines generously
 
@@ -374,7 +384,7 @@ Some other techniques and writing styles I recommend to avoid.
 - Don't use complicated features. Try to simplify the document instead.
   - A complex document is likely hard to read, especially in plain text form.
 
-Tooling
+Linting
 -------
 
 There is a [markdownlint][markdownlint] tool to enforce the markdown style rules
@@ -391,6 +401,8 @@ Create `package.json`:
       }
     }
 
+Install the linter by running `npm install`.
+
 Create `.markdownlint.yaml` file with custom configuration, for example:
 
     # heading style
@@ -404,6 +416,10 @@ Create `.markdownlint.yaml` file with custom configuration, for example:
     MD026:
         punctuation: ".,;:!"
 
+Run the linter to verify the markdown documents follow the configured rules:
+
+    npm test
+
 Related articles
 ----------------
 
@@ -416,3 +432,4 @@ Related articles you might be interested in:
 [syntax]: https://daringfireball.net/projects/markdown/syntax
 [philosophy]: https://daringfireball.net/projects/markdown/syntax#philosophy
 [markdownlint]: https://github.com/DavidAnson/markdownlint
+[source-code]: https://raw.githubusercontent.com/janosgyerik/writing-markdown-well/master/README.md
