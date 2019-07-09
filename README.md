@@ -239,8 +239,8 @@ example:
     ```
 
 Another acceptable case for fenced code blocks is when you can declare the
-language to get nice syntax highlighting in typical rendering engines, for
-example:
+language to get nice syntax highlighting in typical rendering engines, and to
+explicitly signal to the reader the language of the source code. Example:
 
     ```python
     s = "Python syntax highlighting"
