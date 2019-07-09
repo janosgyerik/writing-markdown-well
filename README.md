@@ -102,15 +102,8 @@ Write a section heading (h2) like this:
     High-level structures
     ---------------------
 
-Use as many `-` as letters in the heading, for an "underline" effect. This
-writing style is admittedly more tedious than others, but I think it stands out
-the most clearly as a section heading. I agree it's a pain in the ass that when
-you modify the section heading you may have to delete or add `-` to fix the
-underlining, but for the sake of readability, it's a fair price to pay.
-
-Add a blank line before and after the section heading, to make it stand out
-even more, and to mimic the vertical padding added around section headings in
-rich text formats.
+The reasoning for this writing style is basically the same as for the top-level
+title in the previous section.
 
 ### Sub-section headings
 
