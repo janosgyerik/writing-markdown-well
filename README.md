@@ -65,7 +65,8 @@ too, at least in the text editor when you make changes to the document later.
 
 Therefore, it's good to write a document in a way that's easy to read. If
 documentation is read far more than it is written, then the care you put into
-writing well is worth the investment.
+writing well is worth the investment. (If you're reading this text in
+a rendered form, take a look at the [plain text form here][source-code].)
 
 High-level structures
 ---------------------
@@ -417,3 +418,4 @@ Related articles you might be interested in:
 [syntax]: https://daringfireball.net/projects/markdown/syntax
 [philosophy]: https://daringfireball.net/projects/markdown/syntax#philosophy
 [markdownlint]: https://github.com/DavidAnson/markdownlint
+[source-code]: https://raw.githubusercontent.com/janosgyerik/writing-markdown-well/master/README.md
