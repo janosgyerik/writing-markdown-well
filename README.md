@@ -203,6 +203,15 @@ To add a nested list, I indent by 2 spaces, like this:
       - sub item
         - sub-sub item
 
+Note that the ["spec"][syntax] doesn't actually mention anything about nesting
+lists. I recommend 2 spaces to indent nested items because I find it better
+than other alternatives:
+
+- 1 space may not stand out enough as a nested item, it may look like a typo
+- More than 2 spaces may be tedious to type
+- I dislike tabs, because they are basically invisible characters, and the
+  reading experience may depend on the viewer tool
+
 Lists with deep hierarchy are not handled well by common rendering engines,
 therefore I suggest to avoid them completely, keeping to maximum 3 levels.
 
