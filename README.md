@@ -10,8 +10,8 @@ Markdown is a popular format for writing README files and simple technical
 documents. It's meant to be [simple, easy to write, easy to read, in plain
 text][philosophy].
 
-A well-written README file is crucial to making a project attractive to
-potential contributors.
+A well-written README file can make a project more attractive to potential
+users and contributors.
 
 Why this document?
 ------------------
